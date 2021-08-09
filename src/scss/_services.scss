@@ -1,0 +1,231 @@
+.services {
+    margin-bottom: 12rem;
+    background: linear-gradient(309.27deg, rgba(7, 60, 189, 0.1334) 23.71%, rgba(7, 60, 189, 0) 95.58%), #040418;
+    color: white;
+}
+
+.services__content {
+    padding-left: var(--sidebar-width);
+    padding-top: 9rem;
+    padding-bottom: 17rem;
+}
+
+.services__heading {
+    font-weight: normal;
+    font-size: 6rem;
+    line-height: 7.6rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 4rem;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 6rem;
+    margin-bottom: 17.5rem;
+}
+
+.services__where-to-start {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 63rem);
+    grid-gap: 6rem;
+    align-items: center;
+}
+
+.services__where-to-start-title {
+    font-size: 4.5rem;
+    line-height: 5.7rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.services__where-to-start-text {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.01em;
+    max-width: 55rem;
+}
+
+.services__text {
+    grid-column: span 2;
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+    margin-top: -2rem;
+}
+
+.services__list {
+    display: contents;
+}
+
+.services__list-item {
+    display: contents;
+}
+
+.services__card {
+    display: flex;
+    flex-direction: column;
+    min-height: 23rem;
+    padding: 3rem;
+    border: 0.2rem solid #ffffff;
+    border-radius: 0.5rem;
+}
+
+.services__card-icon {
+    width: 5rem;
+    height: 5rem;
+    flex-shrink: 0;
+    object-fit: contain;
+    margin-bottom: 3rem;
+}
+
+.services__card-title {
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 3.3rem;
+    margin-top: auto;
+}
+
+.services__where-to-start-arrow {
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+
+    
+}
+
+.services__where-to-start-arrow-circle {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+    display: block;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url('../img/circle-dashed.svg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        
+        
+    }
+
+    &::before {
+        // transform: translateX(10rem);
+        animation-name: circle-slide-in-1;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    }
+
+    &::after {
+        opacity: 0.5;
+        
+        animation-name: circle-slide-in-2;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+        // animation-delay: 1s;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        .services__where-to-start-arrow-circle-bg svg {
+            transform: scale(1.15);
+        }
+    }
+}
+
+
+@keyframes circle-slide-in-1 {
+    0% {
+        transform: translateX(0rem);
+    }
+
+
+    50% {
+        transform: translateX(10rem);
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateX(10rem);
+    }
+
+    100% {
+        transform: translateX(10rem);
+        opacity: 0;
+        
+    }
+}
+@keyframes circle-slide-in-2 {
+    0% {
+        transform: translateX(0rem);
+        opacity: 0.5;
+    }
+
+
+    50% {
+        transform: translateX(20rem);
+        opacity: 0.5;
+    }
+
+    80% {
+        opacity: 0.5;
+        transform: translateX(20rem);
+    }
+
+    100% {
+        transform: translateX(20rem);
+        opacity: 0;
+    }
+}
+
+.services__where-to-start-arrow-circle-bg {
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    background-image: url('../img/noise-pattern.png'), url('../img/blue-gradient.svg');
+    background-repeat: repeat, no-repeat;
+    background-size: 4rem 4rem, cover;
+    background-position: left top, center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    svg {
+        width: 14rem;
+        height: 14rem;
+        fill: white;
+        transition: transform .3s;
+    }
+}
+
+.services__where-to-start-arrow-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.01em;
+    color: rgba(#cfd5e7, 0.6);
+    white-space: nowrap;
+}

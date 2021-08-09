@@ -1,0 +1,93 @@
+.about {
+    margin-bottom: 12rem;
+}
+
+.about__row {
+    display: grid;
+    grid-template-columns: minmax(0, var(--sidebar-width)) minmax(0, 1fr);
+}
+
+.about__inner-row {
+    align-items: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 63rem);
+    grid-gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.about__illustration {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 57rem;
+}
+
+.about__text-content {
+}
+
+.about__heading {
+    font-size: 6rem;
+    line-height: 7.6rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    margin-bottom: 2.7rem;
+}
+
+.about__heading-text {
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+    margin-bottom: 4rem;
+}
+
+.about__text {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    max-width: 52rem;
+    p {
+        margin-bottom: 1.5rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.about__achievements-card {
+}
+
+.about__achievements-list-item {
+    border-bottom: 1px solid rgba(#000000, 0.1);
+}
+
+.about__achievements-card {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 63rem);
+    grid-gap: 3rem;
+    padding: 2.8rem 0;
+    align-items: center;
+    display: grid;
+}
+
+.about__achievements-card-number {
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.01em;
+}
+
+.about__achievements-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__achievements-card-text {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+
+.about__achievements-card-icon {
+    margin-left: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+    object-fit: contain;
+}

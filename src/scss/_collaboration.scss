@@ -1,0 +1,178 @@
+.collaboration {
+    margin-bottom: 12rem;
+}
+
+.collaboration__content {
+    padding-left: var(--sidebar-width);
+}
+
+.collaboration__card {
+    background-image: url('../img/noise-pattern.png'), url('../img/collaboration-bg.svg');
+    background-size: 5rem 5rem, cover;
+    background-repeat: repeat, no-repeat;
+    background-position: center, center;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    padding: 5rem 7rem;
+}
+
+.collaboration__card-heading {
+    font-size: 6rem;
+    line-height: 6.4rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    margin-bottom: 5.5rem;
+    max-width: 92rem;
+}
+
+.collaboration__card-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 55rem);
+    align-items: center;
+    grid-gap: 6rem;
+}
+
+.collaboration__card-text-heading {
+    font-weight: normal;
+    font-size: 3.8rem;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+}
+
+.collaboration__card-text-list {
+    margin-bottom: 6rem;
+}
+
+.collaboration__card-text-list-item {
+    display: flex;
+    align-items: flex-start;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 2rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    svg {
+        flex-shrink: 0;
+        fill: currentColor;
+        width: 1.8rem;
+        height: 1.4rem;
+        margin-right: 1rem;
+        margin-top: 0.5rem;
+    }
+}
+
+.collaboration__card-text-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.8rem;
+    line-height: 4.4rem;
+    padding: 3.5rem 7rem;
+    border: 0.2rem solid #ffffff;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s, color 0.2s;
+    .no-touch &:hover,
+    .touch &:active {
+        background-color: white;
+        color: var(--primary-color);
+    }
+}
+
+.collaboration__illustration {
+    svg {
+        display: block;
+        height: auto;
+        width: 100%;
+        height: 45rem;
+        path:nth-child(4) {
+            transform-origin: right bottom;
+            animation-name: puzzle;
+            animation-duration: 4s;
+            transform: rotate(3deg);
+            animation-iteration-count: infinite;
+        }
+
+        circle:nth-last-child(1) {
+            transform-origin: center;
+            animation-name: circle-1;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+        circle:nth-last-child(2) {
+            transform-origin: center;
+            animation-name: circle-2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        circle:nth-last-child(3) {
+            transform-origin: center;
+            animation-name: circle-3;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+
+@keyframes puzzle {
+    0% {
+        transform: translateY(0%) rotate(0);
+    }
+
+    50% {
+        transform: translateY(-3%) rotate(5deg);
+
+    }
+
+    100% {
+        transform: translateY(0%)  rotate(0);
+    }
+}
+
+
+
+@keyframes circle-1 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-5rem, 5rem);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes circle-2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-5rem, -1rem);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes circle-3 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-5rem, 1rem);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

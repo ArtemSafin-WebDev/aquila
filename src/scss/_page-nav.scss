@@ -1,0 +1,53 @@
+.page-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    transition: opacity .3s, visibility .3s;
+    width: 100%;
+
+    .page-nav-sticky & {
+        position: fixed;
+      
+        top: 50px;
+        width: 100%;
+        z-index: 50;
+    }
+
+    .hide-nav & {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s, visibility .3s;
+    }
+}
+
+.page-nav__link {
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #CFD5E7;
+    text-transform: lowercase;
+    display: block;
+    &:link,
+    &:visited {
+        color: #CFD5E7;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .no-touch &:hover,
+    .touch &:active,
+    &.active {
+        color: var(--text-color);
+
+        &.white {
+            color: white;
+        }
+    }
+
+    
+
+
+
+}
