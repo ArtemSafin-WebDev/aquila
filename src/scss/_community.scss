@@ -1,5 +1,9 @@
 .community {
     margin-bottom: 12rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 3.5rem;
+    }
 }
 
 .community__heading {
@@ -8,14 +12,49 @@
     letter-spacing: -0.01em;
     font-weight: 400;
     margin-bottom: 5rem;
+
+    @include breakpoint(mobile) {
+        font-size: 2.4rem;
+        line-height: 1.3;
+        margin-bottom: 2rem;
+    }
+}
+
+.community__tabs-nav-wrapper {
+    margin-bottom: 6rem;
+    border-bottom: 0.2rem solid #cdd8f2;
+
+    @include breakpoint(mobile) {
+        margin: 0 calc(-1 * var(--content-padding));
+        padding: 0 var(--content-padding);
+        margin-bottom: 3rem;
+    }
 }
 
 .community__tabs-nav {
     display: flex;
     align-items: center;
-    margin-bottom: 6rem;
-    border-bottom: 0.2rem solid #cdd8f2;
+  
     position: relative;
+
+    @include breakpoint(mobile) {
+        margin: 0 calc(-1 * var(--content-padding));
+        // padding: 0 var(--content-padding);
+      
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+
+        @include noScrollbar();
+        margin-bottom: -.2rem;
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            flex-shrink: 0;
+            height: 1px;
+            width: var(--content-padding);
+        }
+    }
 }
 
 .community__tabs-nav-link {
@@ -26,8 +65,16 @@
     min-height: 6rem;
     margin-right: 6.4rem;
     user-select: none;
+    white-space: nowrap;
+
+    @include breakpoint(mobile) {
+        min-height: 4rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-right: 3rem;
+    }
     -webkit-user-drag: none;
-    &:last-child {
+    &:last-of-type {
         margin-right: 0;
     }
 
@@ -40,11 +87,19 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 40rem);
     grid-gap: 6rem;
+
+    @include breakpoint(mobile) {
+        grid-gap: 3rem;
+        grid-template-columns: minmax(0, 1fr);
+    }
     
 }
 
 .community__content {
     padding-left: var(--sidebar-width);
+    @include breakpoint(mobile) {
+        padding: 0;
+    }
 }
 
 .community__tab-items {
@@ -52,23 +107,7 @@
 }
 
 .community__tab-item {
-    // position: absolute;
-    // left: 0;
-    // top: 0;
-    // width: 100%;
-    // height: auto;
-    // z-index: 5;
-    // opacity: 0;
-    // visibility: hidden;
-    // transition: opacity .4s, visibility 0s linear .4s;
-
-    // &.active {
-    //     opacity: 1;
-    //     visibility: inherit;
-    //     transition: opacity .4s, visibility .4s;
-    //     z-index: 10;
-    //     position: relative;
-    // }
+    
 
 
 
@@ -80,7 +119,7 @@
     z-index: 5;
     opacity: 0;
     visibility: hidden;
-    // transition: opacity .4s, visibility 0s linear .4s, transform .4s;
+    
     animation-name: slide-out;
     animation-duration: 0.4s;
     animation-fill-mode: forwards; 
@@ -88,9 +127,7 @@
   
 
     &.active {
-        // opacity: 1;
-        // visibility: inherit;
-        // transition: opacity .4s ease .4s, visibility .4s ease .4s, transform .4s ease .4s;
+       
         z-index: 10;
         position: relative;
         animation-delay: 0.3s;
@@ -147,6 +184,11 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-gap: 6rem;
     grid-row-gap: 5rem;
+
+    @include breakpoint(mobile) {
+        grid-gap: 2.5rem;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }
 
 .community__list-item {
@@ -183,6 +225,10 @@
     -webkit-user-drag: none;
     // background-color: var(--primary-color);
     color: white;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 1rem;
+    }
     &::before {
         content: '';
         display: block;
@@ -219,6 +265,14 @@
     font-size: 3.8rem;
     line-height: 4.8rem;
     z-index: 10;
+
+    @include breakpoint(mobile) {
+        font-size: 3.2rem;
+        line-height: 1.2;
+        left: 1rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
    
 }
 
@@ -226,6 +280,12 @@
     font-weight: 600;
     font-size: 2.6rem;
     line-height: 3.3rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        font-weight: 600;
+    }
 }
 
 .community__other {
@@ -235,9 +295,18 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+
+    @include breakpoint(mobile) {
+        padding: 1.4rem;
+        border: .2rem solid #cdd8f2;
+    }
 }
 .community__other-list {
     margin-bottom: 3rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 2rem;
+    }
 }
 
 .community__other-list-item {
@@ -267,6 +336,11 @@
     height: 5.6rem;
     margin-right: 1.2rem;
     position: relative;
+
+    @include breakpoint(mobile) {
+        // width: 4rem;
+        // height: 4rem;
+    }
 }
 
 .community__other-card-image {
@@ -290,6 +364,14 @@
     margin-bottom: 0.6rem;
     font-weight: 400;
     margin-top: -0.25rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        margin: 0;
+        margin-top: -0.3rem;
+        margin-bottom: 0.3rem;
+    }
 }
 
 .community__other-card-date {
@@ -306,6 +388,11 @@
     line-height: 2.3rem;
     color: var(--primary-color);
 
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+
     &:link,
     &:visited {
         color: var(--primary-color);
@@ -318,6 +405,11 @@
         fill: currentColor;
         margin-top: 0.2rem;
         transition: transform .2s;
+
+        @include breakpoint(mobile) {
+            width: 2rem;
+            height: 1.2rem;
+        }
     }
 
     .no-touch &:hover,

@@ -13,6 +13,11 @@
     --text-color:  #040418; 
     --euclid: 'Euclid Circular A', sans-serif;
     --sidebar-width: 28rem;
+
+    @include breakpoint(mobile) {
+        --sidebar-width: 0rem;
+        --content-padding: 2.4rem;
+    }
 }
 
 html {
@@ -23,6 +28,10 @@ html {
     font-size: clamp(5px, 0.60vw, 10px);
   
     @include noHighlight();
+
+    @include breakpoint(mobile) {
+        font-size: 10px;
+    }
 }
 
 body {

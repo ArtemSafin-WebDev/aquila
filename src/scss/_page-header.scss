@@ -9,22 +9,47 @@
 }
 
 .page-header__row {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 63rem);
-    grid-gap: 3rem;
-    align-items: center;
-    padding: 3.8rem 0;
+    
+
+    @include breakpointMF(small-tablet) {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 63rem);
+        grid-gap: 3rem;
+        align-items: center;
+        padding: 3.8rem 0;
+    }
+
+    @include breakpoint(mobile) {
+        display: flex;
+        align-items: center;
+        padding: 1.8rem 0;
+    }
 }
 
 .page-header__col {
     display: flex;
     align-items: center;
+
+    @include breakpoint(mobile) {
+        display: contents;
+    }
+}
+
+.page-header__logo {
+    @include breakpoint(mobile) {
+        margin-top: 0.5rem;
+    }
 }
 
 .page-header__logo-image {
     display: block;
     height: auto;
     width: 21.5rem;
+
+    @include breakpoint(mobile) {
+        width: 15rem;
+        
+    }
 }
 
 .page-header__phone {
@@ -32,6 +57,10 @@
     line-height: 2.5rem;
     margin-right: 4rem;
     position: relative;
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
     &::before {
         content: '';
         position: absolute;
@@ -66,6 +95,12 @@
     line-height: 2.7rem;
     color: rgba(white, .5);
     text-transform: lowercase;
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        margin-right: 1.5rem;
+    }
 
     &:link,
     &:visited {

@@ -14,6 +14,10 @@
     flex-direction: column;
     padding: 6rem var(--content-padding);
 
+    @include breakpoint(mobile) {
+        padding: 2rem var(--content-padding);
+    }
+
     body:not(.loaded) & {
         opacity: 0 !important;
         visibility: hidden !important;
@@ -53,6 +57,11 @@
     padding-left: 10rem;
     padding-right: 6rem;
     position: relative;
+
+    @include breakpoint(mobile) {
+        padding: 1.8rem;
+        padding-top: 4.5rem;
+    }
 }
 
 .modal__close {
@@ -64,20 +73,36 @@
     margin-left: 2.5rem;
     z-index: 100;
 
+    @include breakpoint(mobile) {
+        right: 2rem;
+        top: 2rem;
+        margin: 0;
+        left: auto;
+        width: 2rem;
+        height: 2rem;
+    }
+
     svg {
         display: block;
         width: 100%;
         height: 100%;
         fill: white;
         transition: fill 0.2s;
-    }
 
-    .no-touch &:hover,
-    .touch &:active {
-        svg {
-            fill: rgba(white, 0.8);
+        @include breakpoint(mobile) {
+            fill: var(--primary-color);
         }
     }
+
+    @include breakpointMF(small-tablet) {
+        .no-touch &:hover,
+        .touch &:active {
+            svg {
+                fill: rgba(white, 0.8);
+            }
+        }
+    }
+   
 }
 
 .modal__heading {
@@ -86,17 +111,31 @@
     letter-spacing: -0.01em;
     font-weight: 400;
     max-width: 70rem;
+
+    @include breakpoint(mobile) {
+        font-size: 2.4rem;
+        line-height: 1.2;
+        margin-bottom: 2.5rem;
+    }
 }
 
 .modal__slider {
     position: relative;
     margin: 5rem 0;
+
+    @include breakpoint(mobile) {
+        margin: 3rem 0;
+    }
     .swiper-container {
         overflow: visible;
     }
 
     .swiper-slide {
         width: 48rem;
+
+        @include breakpoint(mobile) {
+            width: 70%;
+        }
     }
 }
 
@@ -140,6 +179,10 @@
     background-color: rgba(white, 0.7);
     z-index: 100;
     transition: background-color 0.2s;
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
     &--prev {
         left: 0;
     }
@@ -169,6 +212,11 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 23rem);
     grid-gap: 6rem;
+
+    @include breakpoint(mobile) {
+        grid-template-columns: minmax(0, 1fr);
+        grid-gap: 2rem;
+    }
 }
 
 .modal__content-blocks {
@@ -177,12 +225,22 @@
     grid-row-gap: 5rem;
     grid-column-gap: 8rem;
     margin-bottom: 8rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
+        grid-template-columns: minmax(0, 1fr);
+        grid-gap: 2rem;
+    }
 }
 
 .modal__content-block {
-    &:first-child {
-        grid-column: span 2;
+
+    @include breakpointMF(small-tablet) {
+        &:first-child {
+            grid-column: span 2;
+        }
     }
+   
 }
 
 .modal__content-block-heading {
@@ -191,17 +249,33 @@
     line-height: 1.2;
     font-weight: 400;
     margin-bottom: 1rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+    }
 }
 
 .modal__content-block-text {
     font-size: 2rem;
     line-height: 2.5rem;
     max-width: 63rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
 }
 
 .modal__buttons {
     display: flex;
     align-items: center;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
 }
 
 .modal__more-btn {
@@ -218,6 +292,14 @@
     padding: 2.2rem 4.2rem;
     margin-right: 2rem;
     flex-shrink: 0;
+
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        padding: 1.5rem 2.4rem;
+        width: 100%;
+        margin: 0;
+    }
     &:link,
     &:visited {
         color: white;
@@ -228,6 +310,12 @@
     font-size: 1.8rem;
     line-height: 2.3rem;
     color: rgba(#040418, 0.5);
+
+    @include breakpoint(mobile) {
+        font-size: 1.2rem;
+        line-height: 1.2;
+        margin-top: 1rem;
+    }
 }
 
 .modal__sidebar-text {
@@ -236,6 +324,9 @@
     line-height: 2rem;
     margin-bottom: 5rem;
     color: var(--primary-color);
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
+    }
 }
 
 .modal__manager-heading {
@@ -244,6 +335,11 @@
     font-weight: 400;
     margin-bottom: 0.8rem;
     color: rgba(#040418, 0.5);
+    @include breakpoint(mobile) {
+        font-size: 1.4rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+    }
 }
 
 .modal__manager-card {
@@ -282,6 +378,10 @@
     line-height: 2.5rem;
     font-weight: 400;
     margin-bottom: 0.2rem;
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
 }
 
 .modal__manager-card-role {

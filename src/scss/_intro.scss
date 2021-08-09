@@ -6,6 +6,10 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 3.5rem;
+    }
 }
 
 .intro__bg {
@@ -28,6 +32,8 @@
             
             animation-duration: 10s;
             animation-timing-function: ease;
+
+            
         }
     }
 
@@ -61,20 +67,37 @@
     }
 }
 
+
+
 .intro__content {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 63rem);
-    grid-gap: 3rem;
-    position: relative;
-    min-height: 68rem;
-    z-index: 1;
-    padding-bottom: 8rem;
-    padding-top: 14rem;
+   
+
+    @include breakpointMF(small-tablet) {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 63rem);
+        grid-gap: 3rem;
+        position: relative;
+        min-height: 68rem;
+        z-index: 1;
+        padding-bottom: 8rem;
+        padding-top: 14rem;
+    }
+
+    @include breakpoint(mobile) {
+        padding: 6rem 0;
+        padding-top: 12rem;
+        padding-bottom: 0;
+
+    }
 }
 
 .intro__text-content {
-    max-width: 82rem;
-    margin: auto 0;
+   
+
+    @include breakpointMF(small-tablet) {
+        max-width: 82rem;
+        margin: auto 0;
+    }
 }
 
 .intro__main-heading {
@@ -83,20 +106,42 @@
     line-height: 6.8rem;
     letter-spacing: -0.01em;
     margin-bottom: 4.5rem;
+
+    @include breakpoint(mobile) {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 2.8rem;
+    }
 }
 
 .intro__text {
     font-size: 2rem;
     line-height: 2.5rem;
     padding-left: var(--sidebar-width);
+
+    @include breakpoint(mobile) {
+        padding: 0;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        max-width: 25rem;
+    }
 }
 
 .intro__image {
-    position: absolute;
-    right: 5rem;
-    width: 60rem;
-    height: auto;
-    bottom: -10rem;
-    pointer-events: none;
-    z-index: 1;
+   
+
+    @include breakpointMF(small-tablet) {
+        position: absolute;
+        right: 5rem;
+        width: 60rem;
+        height: auto;
+        bottom: -10rem;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    @include breakpoint(mobile) {
+        margin-top: 2rem;
+        margin-bottom: -10rem;
+    }
 }

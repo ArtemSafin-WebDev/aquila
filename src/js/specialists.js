@@ -10,13 +10,18 @@ export default function specialists() {
 
         new Swiper(container, {
             slidesPerView: 'auto',
-            spaceBetween: 45,
+            spaceBetween: 20,
             watchOverflow: true,
             centeredSlides: true,
             centeredSlidesBounds: true,
             navigation: {
                 nextEl: element.querySelector('.specialists__arrow--next'),
                 prevEl: element.querySelector('.specialists__arrow--prev')
+            },
+            breakpoints: {
+                641: {
+                    spaceBetween: 45
+                }
             }
         });
     });

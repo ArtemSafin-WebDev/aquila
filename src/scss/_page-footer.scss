@@ -9,6 +9,12 @@
     display: grid;
     grid-template-columns: minmax(0, var(--sidebar-width)) repeat(2, minmax(0, 1fr)) minmax(0, 46rem);
     grid-row-gap: 3rem;
+
+    @include breakpoint(mobile) {
+        padding: 3rem 0;
+        grid-template-columns: minmax(0, 1fr);
+        grid-gap: 3rem;
+    }
 }
 
 .page-footer__col {
@@ -18,6 +24,8 @@
             grid-row: 1 / 3;
         }
     }
+
+   
 }
 
 .page-footer__logo {
@@ -28,6 +36,10 @@
     width: 21.5rem;
     height: auto;
     display: block;
+    @include breakpoint(mobile) {
+        width: 15rem;
+        
+    }
 }
 
 .page-footer__heading {
@@ -36,11 +48,18 @@
     font-weight: 400;
     color: rgba(white, 0.5);
     margin-bottom: 2.5rem;
+    @include breakpoint(mobile) {
+        margin-bottom: 1.2rem;
+    }
 }
 
 .page-footer__address {
     font-size: 2rem;
     line-height: 2.5rem;
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
 }
 
 .page-footer__contacts {
@@ -56,12 +75,23 @@
     font-size: 2rem;
     line-height: 2.5rem;
 
+    @include breakpoint(mobile) {
+        margin-bottom: 1.5rem;
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
     svg {
         width: 2rem;
         height: 2rem;
         flex-shrink: 0;
         fill: currentColor;
         margin-right: 1.2rem;
+        @include breakpoint(mobile) {
+            width: 1.6rem;
+            height: 1.6rem;
+            margin-right: 1rem;
+        }
     }
     &:last-child {
         margin-bottom: 0;
@@ -109,6 +139,14 @@
     z-index: 1;
     color: white;
 
+    @include breakpoint(mobile) {
+        margin: 0 auto;
+        width: 18rem;
+        height: 18rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
     &:link,
     &:visited {
         color: white;
@@ -143,6 +181,10 @@
     color: rgba(white, 0.5);
     font-size: 1.4rem;
     line-height: 1.8rem;
+
+    @include breakpoint(mobile) {
+        order: 10;
+    }
 }
 
 .page-footer__policy {
