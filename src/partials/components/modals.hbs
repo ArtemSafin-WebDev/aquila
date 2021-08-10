@@ -139,3 +139,48 @@
         </div>
     </div>
 </div>
+
+<div class="modal js-modal" id="callback-modal">
+    <div class="modal__inner modal__inner--callback">
+        <button class="modal__close js-close-modal">
+            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                <use xlink:href="#cross"></use>
+            </svg>
+        </button>
+        <div class="modal__content modal__content--callback">
+            <h3 class="modal__heading">
+                Готовы с вами общаться!
+            </h3>
+            <div class="modal__heading-text">
+                <p>
+                    Оставьте ваш телефон, и мы ответим на все ваши вопросы
+                </p>
+            </div>
+            <form action="/" method="POST" class="modal__form" data-need-validation="">
+                <div class="modal__input-wrapper">
+                    <input type="tel" class="modal__input js-phone-input" required="" data-parsley-phone=""
+                        placeholder="Телефон">
+                </div>
+                <div class="modal__checkbox-wrapper">
+
+
+                    <label class="modal__checkbox">
+                        <input type="checkbox" name="policy" value="1" class="modal__checkbox-input" checked required>
+                        <span class="modal__checkbox-mark">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-checkbox-mark">
+                                <use xlink:href="#checkbox-mark"></use>
+                            </svg>
+                        </span>
+                        <span class="modal__checkbox-text">
+                            Я согласен с политикой конфиденциальности
+                        </span>
+                    </label>
+                </div>
+                <button type="submit" class="modal__submit" type="reset">
+                    Оставить заявку
+                </button>
+
+            </form>
+        </div>
+    </div>
+</div>

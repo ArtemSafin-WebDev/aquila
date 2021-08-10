@@ -4483,6 +4483,8 @@ select:-webkit-autofill:focus {
   position: relative;
   -ms-flex-negative: 0;
       flex-shrink: 0; }
+  .modal__inner--callback {
+    max-width: 58rem; }
 
 .modal__content {
   background: #ffffff;
@@ -4493,14 +4495,156 @@ select:-webkit-autofill:focus {
   padding-left: 10rem;
   padding-right: 6rem;
   position: relative; }
+  .modal__content--callback {
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem; }
   @media only screen and (max-width: 640px) {
     .modal__content {
       padding: 1.8rem;
-      padding-top: 4.5rem; } }
+      padding-top: 5.5rem; } }
+
+.modal__heading-text {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: -0.01em;
+  margin-top: 1rem;
+  margin-bottom: 3.5rem; }
+  @media only screen and (max-width: 640px) {
+    .modal__heading-text {
+      font-size: 1.6rem;
+      line-height: 1.3;
+      margin-bottom: 2.5rem; } }
+
+.modal__form .parsley-errors-list.filled {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin-top: .5rem; }
+
+.modal__input-wrapper {
+  margin-bottom: 2.2rem; }
+
+.modal__input {
+  display: block;
+  width: 100%;
+  border: 0.2rem solid #040418;
+  padding: 0 3.2rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  border-radius: 0.5rem;
+  height: 7rem; }
+  @media only screen and (max-width: 640px) {
+    .modal__input {
+      font-size: 1.6rem;
+      line-height: 1.2;
+      height: 5.5rem;
+      padding: 0 1.8rem; } }
+  .modal__input::-webkit-input-placeholder {
+    color: rgba(4, 4, 24, 0.5); }
+  .modal__input:-moz-placeholder {
+    color: rgba(4, 4, 24, 0.5); }
+  .modal__input::-moz-placeholder {
+    color: rgba(4, 4, 24, 0.5); }
+  .modal__input:-ms-input-placeholder {
+    color: rgba(4, 4, 24, 0.5); }
+
+.modal__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.modal__checkbox-wrapper {
+  margin-bottom: 4rem; }
+  @media only screen and (max-width: 640px) {
+    .modal__checkbox-wrapper {
+      margin-bottom: 2.5rem; } }
+
+.modal__checkbox-mark {
+  width: 2rem;
+  height: 2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 0.8rem;
+  background: #e9f7ff;
+  border-radius: 0.2rem; }
+  .modal__checkbox-mark svg {
+    width: 1.3rem;
+    height: 1rem;
+    fill: var(--primary-color);
+    opacity: 0;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s; }
+
+.modal__checkbox-text {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-top: 0.1rem; }
+
+.modal__checkbox-input {
+  display: none; }
+
+.modal__checkbox-input:checked ~ .modal__checkbox-mark svg {
+  opacity: 1; }
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.modal__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background: #073cbd;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 2rem 3.4rem;
+  font-weight: 500;
+  font-size: 2.8rem;
+  line-height: 1.2; }
+  @media only screen and (max-width: 640px) {
+    .modal__submit {
+      font-size: 1.8rem;
+      line-height: 1.2;
+      padding: 1.5rem 2.4rem; } }
 
 .modal__close {
   position: absolute;
-  top: 2.5rem;
+  top: 0;
   left: 100%;
   width: 3rem;
   height: 3rem;
@@ -4539,7 +4683,7 @@ select:-webkit-autofill:focus {
     .modal__heading {
       font-size: 2.4rem;
       line-height: 1.2;
-      margin-bottom: 2.5rem; } }
+      margin-bottom: 1.5rem; } }
 
 .modal__slider {
   position: relative;
@@ -4739,7 +4883,7 @@ select:-webkit-autofill:focus {
   color: var(--primary-color); }
   @media only screen and (max-width: 640px) {
     .modal__sidebar-text {
-      margin-bottom: 3rem; } }
+      margin-bottom: 2rem; } }
 
 .modal__manager-heading {
   font-size: 1.8rem;
@@ -4749,9 +4893,9 @@ select:-webkit-autofill:focus {
   color: rgba(4, 4, 24, 0.5); }
   @media only screen and (max-width: 640px) {
     .modal__manager-heading {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       line-height: 1.2;
-      margin-bottom: 1.5rem; } }
+      margin-bottom: 1rem; } }
 
 .modal__manager-card {
   display: -webkit-box;
