@@ -23,11 +23,13 @@
 .community__tabs-nav-wrapper {
     margin-bottom: 6rem;
     border-bottom: 0.2rem solid #cdd8f2;
+    align-self: flex-start;
 
     @include breakpoint(mobile) {
         margin: 0 calc(-1 * var(--content-padding));
         padding: 0 var(--content-padding);
         margin-bottom: 3rem;
+        align-self: initial;
     }
 }
 
@@ -97,6 +99,8 @@
 
 .community__content {
     padding-left: var(--sidebar-width);
+    display: flex;
+    flex-direction: column;
     @include breakpoint(mobile) {
         padding: 0;
     }

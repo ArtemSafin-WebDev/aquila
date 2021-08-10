@@ -14,6 +14,9 @@ import anchorLinks from './anchorLinks';
 import sectionsMenu from './sectionsMenu';
 import modals from './modals';
 import modalSlider from './modalSlider';
+import intro from './intro';
+import cases from './cases';
+import services from './services';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -30,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
     anchorLinks();
     sectionsMenu();
     modalSlider();
+    intro();
+    cases();
+    services();
     
 });
 

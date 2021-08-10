@@ -1,6 +1,10 @@
 import gsap from 'gsap';
 import { debounce } from 'lodash';
 
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default function community() {
     const elements = Array.from(document.querySelectorAll('.js-community'));
 
@@ -10,15 +14,14 @@ export default function community() {
         const indicator = document.createElement('div');
         indicator.classList.add('community__tabs-indicator');
 
-        let activeIndex = null;
+        let activeIndex = 0;
 
         const setActiveLink = (index, forced = false) => {
-            if (activeIndex === index) return;
             links.forEach(link => link.classList.remove('active'));
             links[index].classList.add('active');
             tabs.forEach(tab => tab.classList.remove('active'));
             tabs[index].classList.add('active');
-          
+
             activeIndex = index;
             if (links.length) {
                 const activeLinkOffsetX = links[index].offsetLeft;
@@ -46,11 +49,7 @@ export default function community() {
 
         links[0].parentElement.appendChild(indicator);
 
-        if (tabs.length) {
-            setActiveLink(0);
-        }
-
-        
+        setActiveLink(activeIndex);
 
         window.addEventListener(
             'resize',
@@ -62,13 +61,35 @@ export default function community() {
 
         window.addEventListener('load', () => {
             setActiveLink(activeIndex, true);
-        })
+        });
 
         links.forEach((link, linkIndex) => {
             link.addEventListener('click', event => {
                 event.preventDefault();
                 setActiveLink(linkIndex);
             });
+        });
+
+        const row = element.querySelector('.community__row');
+        const other = element.querySelector('.community__other');
+
+        ScrollTrigger.matchMedia({
+            '(min-width: 641px)': () => {
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: row,
+                        start: 'top bottom-=120',
+                        end: 'bottom top',
+                        scrub: false,
+                        markers: false
+                    }
+                });
+
+                tl.from(other, {
+                    autoAlpha: 0,
+                    duration: 0.8
+                });
+            }
         });
     });
 }
