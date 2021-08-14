@@ -21,12 +21,16 @@ export default function pageNav() {
                 pin: true,
                 pinSpacing: false,
                 markers: false,
+               
                 onLeave: () => {
                     document.body.classList.add('hide-nav');
                 },
                 onEnterBack: () => {
                     document.body.classList.remove('hide-nav');
-                }
+                },
+                onToggle: () => {
+                    ScrollTrigger.refresh();
+                },
             });
 
             if (services) {

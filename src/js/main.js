@@ -17,6 +17,10 @@ import modalSlider from './modalSlider';
 import intro from './intro';
 import cases from './cases';
 import services from './services';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -36,11 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
     intro();
     cases();
     services();
-    
+    pageNav();
 });
 
 window.addEventListener('load', function() {
     document.body.classList.add('loaded');
-    pageNav();
-    setTimeout(() => document.body.classList.add('animatable'), 300)
-})
+    ScrollTrigger.refresh();
+    setTimeout(() => {
+        document.body.classList.add('animatable');
+    }, 300);
+});
