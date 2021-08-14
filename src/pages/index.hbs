@@ -84,7 +84,7 @@
                     </li>
                 </ul>
             </div>
-            <a href="#callback-modal" class="subscribe__link js-open-modal">
+            <a href="#audit-modal" class="subscribe__link js-open-modal">
                 Записаться<br> на аудит
             </a>
         </div>
@@ -502,27 +502,31 @@
             <h2 class="community__heading">
                 Комьюнити Aquila.media
             </h2>
-            <div class="community__tabs-nav-wrapper">
-
-
-                <div class="community__tabs-nav">
-                    <a href="#" class="community__tabs-nav-link">
-                        Предстоящие события
-                    </a>
-                    <a href="#" class="community__tabs-nav-link">
-                        Прошедшие события
-                    </a>
-                    <a href="#" class="community__tabs-nav-link">
-                        Обучение
-                    </a>
+            <div class="community__row">
+                <div class="community__tabs-nav-wrapper">
+                    <div class="community__tabs-nav">
+                        <a href="#" class="community__tabs-nav-link">
+                            Предстоящие события
+                        </a>
+                        <a href="#" class="community__tabs-nav-link">
+                            Прошедшие события
+                        </a>
+                        <a href="#" class="community__tabs-nav-link">
+                            Обучение
+                        </a>
+                    </div>
                 </div>
+                <h3 class="community__other-heading">
+                    Полезные материалы
+                </h3>
             </div>
+
             <div class="community__row">
                 <div class="community__tab-items">
                     <div class="community__tab-item">
                         <ul class="community__list">
                             <li class="community__list-item">
-                                <a href="#" class="community__card">
+                                <a href="#event-modal" class="community__card js-open-modal">
                                     <div class="community__card-image-container">
                                         <img data-src="img/community/1.jpg" alt=""
                                             class="community__card-image lazyload">
@@ -536,7 +540,7 @@
                                 </a>
                             </li>
                             <li class="community__list-item">
-                                <a href="#" class="community__card">
+                                <a href="#event-modal" class="community__card js-open-modal">
                                     <div class="community__card-image-container">
                                         <img data-src="img/community/2.jpg" alt=""
                                             class="community__card-image lazyload">
@@ -550,7 +554,7 @@
                                 </a>
                             </li>
                             <li class="community__list-item">
-                                <a href="#" class="community__card">
+                                <a href="#event-modal" class="community__card js-open-modal">
                                     <div class="community__card-image-container">
                                         <img data-src="img/community/3.jpg" alt=""
                                             class="community__card-image lazyload">
@@ -564,7 +568,7 @@
                                 </a>
                             </li>
                             <li class="community__list-item">
-                                <a href="#" class="community__card">
+                                <a href="#event-modal" class="community__card js-open-modal">
                                     <div class="community__card-image-container">
                                         <img data-src="img/community/4.jpg" alt=""
                                             class="community__card-image lazyload">
@@ -834,21 +838,33 @@
                         Подпишись и получи бесплатный гайд
                     </p>
                 </div>
-                <form action="/" method="POST" class="contact-us__form">
-                    <div class="contact-us__form-wrapper">
-                        <input type="email" class="contact-us__form-input" name="email" placeholder="E-mail" required>
-                        <button type="submit" class="contact-us__form-submit">
-                            <svg width="14" height="14" aria-hidden="true" class="icon-submit-arrow">
-                                <use xlink:href="#submit-arrow"></use>
-                            </svg>
-                        </button>
+                <div class="contact-us__subscription">
+
+
+                    <form action="/" method="POST" class="contact-us__form" data-need-validation=""
+                        id="contact-us-form">
+                        <div class="contact-us__form-wrapper">
+                            <input type="email" class="contact-us__form-input" name="email" placeholder="E-mail"
+                                required data-parsley-errors-container="#contact-us-form">
+                            <button type="submit" class="contact-us__form-submit">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-submit-arrow">
+                                    <use xlink:href="#submit-arrow"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="contact-us__form-remark">
+                            <p>
+                                Регулярная рассылка полезностей
+                            </p>
+                        </div>
+                    </form>
+                    <div class="contact-us__success-message">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                            <use xlink:href="#checkmark"></use>
+                        </svg>
+                        Теперь и вы в курсе свежих инсайтов
                     </div>
-                    <div class="contact-us__form-remark">
-                        <p>
-                            Регулярная рассылка полезностей
-                        </p>
-                    </div>
-                </form>
+                </div>
 
             </div>
             <div class="contact-us__col">
@@ -939,7 +955,7 @@
                                 проекта
                             </li>
                         </ul>
-                        <a href="#" class="collaboration__card-text-link">
+                        <a href="#zoom-modal" class="collaboration__card-text-link js-open-modal">
                             Zoom знакомство
                         </a>
                     </div>

@@ -9,20 +9,26 @@
         <div class="modal__content">
 
 
-            <h3 class="modal__heading">
-                Небольшое или длинное название кейса в две строчки или больше
-            </h3>
+
             <div class="modal__slider js-modal-slider">
-                <button class="modal__slider-button modal__slider-button--prev" type="button">
-                    <svg width="14" height="14" aria-hidden="true" class="icon-thin-slider-arrow-left">
-                        <use xlink:href="#thin-slider-arrow-left"></use>
-                    </svg>
-                </button>
-                <button class="modal__slider-button modal__slider-button--next" type="button">
-                    <svg width="14" height="14" aria-hidden="true" class="icon-thin-slider-arrow-right">
-                        <use xlink:href="#thin-slider-arrow-right"></use>
-                    </svg>
-                </button>
+                <div class="modal__slider-top-row">
+                    <h3 class="modal__heading">
+                        Небольшое или длинное название кейса в две строчки или больше
+                    </h3>
+                    <div class="modal__slider-buttons">
+                        <button class="modal__slider-button modal__slider-button--prev" type="button">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-slider-arrow-left">
+                                <use xlink:href="#slider-arrow-left"></use>
+                            </svg>
+                        </button>
+                        <button class="modal__slider-button modal__slider-button--next" type="button">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-slider-arrow-right">
+                                <use xlink:href="#slider-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -100,7 +106,7 @@
                         </div>
                     </div>
                     <div class="modal__buttons">
-                        <a href="#" class="modal__more-btn">
+                        <a href="#callback-modal" class="modal__more-btn js-open-modal">
                             Рассказать подробнее
                         </a>
                         <div class="modal__more-btn-text">
@@ -139,6 +145,98 @@
         </div>
     </div>
 </div>
+<div class="modal js-modal" id="event-modal">
+    <div class="modal__inner">
+
+        <button class="modal__close modal__close--white-on-mobile js-close-modal">
+            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                <use xlink:href="#cross"></use>
+            </svg>
+        </button>
+        <div class="modal__content">
+            <div class="modal__event-image-container">
+                <img data-src="img/event-photo.jpg" alt="" class="modal__event-image lazyload">
+                <h3 class="modal__event-heading">
+                    Название какой-то клевой вечеринки и фото счастливых людей
+                </h3>
+            </div>
+            <div class="modal__row">
+                <div class="modal__main">
+                    <div class="modal__content-blocks">
+
+
+                        <div class="modal__content-block">
+                            <h4 class="modal__content-block-heading">
+                                Описание
+                            </h4>
+                            <div class="modal__content-block-text">
+                                <p>
+                                    Профессионально реализовываем perfomance-маркетинг, опираясь на ключевые показатели
+                                    вашего бизнеса. Внедряем сквозную аналитику и работаем над всеми этапами воронки
+                                    продаж
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal__content-block">
+                            <h4 class="modal__content-block-heading">
+                                Дата
+                            </h4>
+                            <div class="modal__content-block-datetime">
+                                <div class="modal__content-block-datetime-item">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-calendar">
+                                        <use xlink:href="#calendar"></use>
+                                    </svg>
+                                    05.12.2021
+                                </div>
+                                <div class="modal__content-block-datetime-item">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-clock">
+                                        <use xlink:href="#clock"></use>
+                                    </svg>
+                                    17:00
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal__sidebar">
+                    <div class="modal__content-blocks modal__content-blocks--one-col">
+
+
+                        <div class="modal__content-block">
+                            <h4 class="modal__content-block-heading">
+                                Тема мероприятия
+                            </h4>
+                            <div class="modal__content-block-text">
+                                <p>
+                                    Контекстная реклама Google & Yandex
+                                </p>
+                            </div>
+                            <div class="modal__content-block-event-tag">
+                                Онлайн • Вебинар
+                            </div>
+                        </div>
+                        <div class="modal__content-block">
+                            <h4 class="modal__content-block-heading">
+                                Количество участников
+                            </h4>
+                            <div class="modal__content-block-text">
+                                <p>
+                                    20 человек
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
 
 <div class="modal js-modal" id="callback-modal">
     <div class="modal__inner modal__inner--callback">
@@ -156,7 +254,10 @@
                     Оставьте ваш телефон, и мы ответим на все ваши вопросы
                 </p>
             </div>
-            <form action="/" method="POST" class="modal__form" data-need-validation="">
+            <form action="/" method="POST" class="modal__form" data-need-validation="" id="callback-form">
+                <div class="modal__input-wrapper">
+                    <input type="text" name="name" class="modal__input" required="" placeholder="Имя">
+                </div>
                 <div class="modal__input-wrapper">
                     <input type="tel" class="modal__input js-phone-input" required="" data-parsley-phone=""
                         placeholder="Телефон">
@@ -176,11 +277,161 @@
                         </span>
                     </label>
                 </div>
-                <button type="submit" class="modal__submit" type="reset">
+                <button type="submit" class="modal__submit" type="submit">
                     Оставить заявку
                 </button>
 
             </form>
+        </div>
+    </div>
+</div>
+<div class="modal js-modal" id="audit-modal">
+    <div class="modal__inner modal__inner--callback">
+        <button class="modal__close js-close-modal">
+            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                <use xlink:href="#cross"></use>
+            </svg>
+        </button>
+        <div class="modal__content modal__content--callback">
+            <h3 class="modal__heading">
+                Записаться на аудит
+            </h3>
+            <div class="modal__heading-text">
+                <p>
+                    Оставьте ваши контакты, и мы с вами побалакаем
+                </p>
+            </div>
+            <form action="/" method="POST" class="modal__form" data-need-validation="" id="audit-form">
+                <div class="modal__input-wrapper">
+                    <input type="text" name="name" class="modal__input" required="" placeholder="Имя">
+                </div>
+                <div class="modal__input-wrapper">
+                    <input type="tel" name="phone" class="modal__input js-phone-input" required="" data-parsley-phone=""
+                        placeholder="Телефон">
+                </div>
+                <div class="modal__input-wrapper">
+                    <input type="email" name="email" class="modal__input js-phone-input" required=""
+                        placeholder="Email">
+                </div>
+                <div class="modal__checkbox-wrapper">
+
+
+                    <label class="modal__checkbox">
+                        <input type="checkbox" name="policy" value="1" class="modal__checkbox-input" checked required>
+                        <span class="modal__checkbox-mark">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-checkbox-mark">
+                                <use xlink:href="#checkbox-mark"></use>
+                            </svg>
+                        </span>
+                        <span class="modal__checkbox-text">
+                            Я согласен с политикой конфиденциальности
+                        </span>
+                    </label>
+                </div>
+                <button type="submit" class="modal__submit" type="submit">
+                    Оставить заявку
+                </button>
+
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal js-modal" id="zoom-modal">
+    <div class="modal__inner modal__inner--callback">
+        <button class="modal__close js-close-modal">
+            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                <use xlink:href="#cross"></use>
+            </svg>
+        </button>
+        <div class="modal__content modal__content--callback">
+            <h3 class="modal__heading">
+                Давайте познакомимся
+            </h3>
+            <div class="modal__heading-text">
+                <p>
+                    Оставьте ваши контакты, и мы с вами побалакаем
+                </p>
+            </div>
+            <form action="/" method="POST" class="modal__form" data-need-validation="" id="zoom-form">
+                <div class="modal__input-wrapper">
+                    <input type="text" name="name" class="modal__input" required="" placeholder="Имя">
+                </div>
+                <div class="modal__input-wrapper">
+                    <input type="tel" name="phone" class="modal__input js-phone-input" required="" data-parsley-phone=""
+                        placeholder="Телефон">
+                </div>
+                <div class="modal__input-wrapper">
+                    <input type="text" name="datetime" class="modal__input" required=""
+                        placeholder="Удобная дата и время">
+                </div>
+                <div class="modal__checkbox-wrapper">
+
+
+                    <label class="modal__checkbox">
+                        <input type="checkbox" name="policy" value="1" class="modal__checkbox-input" checked required>
+                        <span class="modal__checkbox-mark">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-checkbox-mark">
+                                <use xlink:href="#checkbox-mark"></use>
+                            </svg>
+                        </span>
+                        <span class="modal__checkbox-text">
+                            Я согласен с политикой конфиденциальности
+                        </span>
+                    </label>
+                </div>
+                <button type="submit" class="modal__submit" type="submit">
+                    Оставить заявку
+                </button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal js-modal" id="callback-modal-success">
+    <div class="modal__inner modal__inner--callback">
+        <button class="modal__close js-close-modal">
+            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                <use xlink:href="#cross"></use>
+            </svg>
+        </button>
+        <div class="modal__content modal__content--callback">
+            <h3 class="modal__heading">
+                Спасибо за вашу<br> заявку
+                <svg width="14" height="14" aria-hidden="true" class="icon-stars">
+                    <use xlink:href="#stars"></use>
+                </svg>
+            </h3>
+            <div class="modal__heading-text">
+                <p>
+                    Наш менджер свяжется с вами в течении 30 минут и ответит на все ваши вопросы
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal js-modal" id="zoom-modal-success">
+    <div class="modal__inner modal__inner--callback">
+        <button class="modal__close js-close-modal">
+            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                <use xlink:href="#cross"></use>
+            </svg>
+        </button>
+        <div class="modal__content modal__content--callback">
+            <h3 class="modal__heading">
+                Спасибо за вашу<br> заявку
+                <svg width="14" height="14" aria-hidden="true" class="icon-stars">
+                    <use xlink:href="#stars"></use>
+                </svg>
+            </h3>
+            <div class="modal__heading-text">
+                <p>
+                    Наш менджер свяжется с вами в течении 30 минути назначит ZOOM конференцию в удобное для вас время!
+                </p>
+            </div>
+
         </div>
     </div>
 </div>

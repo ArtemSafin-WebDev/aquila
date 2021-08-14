@@ -1,14 +1,16 @@
-import { disableBodyScroll as lockScroll, clearAllBodyScrollLocks as unlockScroll } from 'body-scroll-lock';
+import { disableBodyScroll as lockScroll, clearAllBodyScrollLocks as unlockScroll, enableBodyScroll } from 'body-scroll-lock';
 
 export default function modals() {
     let activeModal = null;
 
     function openModal(id) {
-        if (activeModal) {
-            closeModal(activeModal);
-        }
         const modal = document.querySelector(id);
-        if (modal) {
+        if (!modal) {
+            console.error(`Modal with ID: ${id} not found`);
+            return;
+        }
+
+        const openHandler = () => {
             lockScroll(modal, {
                 reserveScrollBarGap: true
             });
@@ -18,15 +20,28 @@ export default function modals() {
 
             const openModalEvent = new CustomEvent('openmodal');
             document.dispatchEvent(openModalEvent);
-        } else {
-            console.error(`Modal with ID: ${id} not found`);
         }
+        if (activeModal) {
+            closeModal(activeModal);
+
+        
+            setTimeout(() => {
+                openHandler();
+            }, 400)
+        } else {
+            openHandler();
+        }
+        
+        
     }
 
     function closeModal(modal) {
-        unlockScroll();
-        modal.classList.remove('active');
+
         document.body.classList.remove('modal-open');
+        unlockScroll();
+        
+        modal.classList.remove('active');
+       
         activeModal = null;
 
         const closeModalEvent = new CustomEvent('closemodal');

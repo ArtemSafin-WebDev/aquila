@@ -9,8 +9,6 @@
 }
 
 .contact-us__row {
-  
-
     @include breakpointMF(small-tablet) {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -64,6 +62,17 @@
     display: flex;
     flex-direction: column;
     max-width: 46rem;
+
+    &.hidden {
+        display: none;
+    }
+
+    .parsley-errors-list.filled {
+        color: var(--primary-color);
+        font-size: 1.4rem;
+        line-height: 1.2;
+        margin-top: 0.5rem;
+    }
 }
 
 .contact-us__form-wrapper {
@@ -116,6 +125,7 @@
 .contact-us__form-remark {
     color: rgba(#073cbd, 0.3);
     margin-top: 1rem;
+    order: 10;
 }
 
 .contact-us__more-info-text {
@@ -150,13 +160,12 @@
         fill: currentColor;
         transition: transform 0.2s;
         margin-top: 0.25rem;
-        
     }
 
     .no-touch &:hover,
     .touch &:active {
         svg {
-            transform: translateX(.5rem);
+            transform: translateX(0.5rem);
         }
     }
 }
@@ -234,7 +243,6 @@
         width: 5rem;
         height: 5rem;
         margin-right: 2rem;
-
     }
 }
 
@@ -266,5 +274,59 @@
     @include breakpoint(mobile) {
         font-size: 1.8rem;
         line-height: 1.2;
+    }
+}
+
+.contact-us__subscription {
+    position: relative;
+}
+
+.contact-us__success-message {
+   
+    align-items: center;
+    padding: 2.5rem 0;
+    position: relative;
+    max-width: 46rem;
+    display: none;
+
+    @include breakpoint(mobile) {
+        padding: 2rem 0;
+    }
+    svg {
+        width: 2rem;
+        height: 1.5rem;
+        flex-shrink: 0;
+        fill: var(--primary-color);
+        margin-right: 1rem;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        height: 0.2rem;
+        background-color: var(--primary-color);
+        border-radius: 0.5rem;
+    }
+
+    
+}
+
+
+.contact-us__success-message.shown {
+    display: flex;
+    animation-name: fade-in;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }

@@ -27,5 +27,25 @@ export default function cases() {
                 });
             }
         });
+        const thirdCol = element.querySelector('.cases__col:nth-child(3)');
+
+        ScrollTrigger.matchMedia({
+            '(min-width: 641px)': () => {
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: element,
+                        start: 'top bottom',
+                        end: 'bottom top',
+                        scrub: true,
+                        markers: false
+                    }
+                });
+
+                tl.from(thirdCol, {
+                    y: 180,
+                    duration: 0.5
+                });
+            }
+        });
     })
 }

@@ -16,7 +16,7 @@ export default function services() {
                         scrollTrigger: {
                             trigger: card,
                             start: 'top bottom-=90',
-                            end: 'bottom bottom-=90',
+                            end: 'top center',
                             scrub: true,
                             markers: false
                         }
