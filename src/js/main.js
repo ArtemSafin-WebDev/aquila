@@ -19,6 +19,7 @@ import cases from './cases';
 import services from './services';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import fancybox from './fancybox';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -41,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
     cases();
     services();
     pageNav();
+    fancybox();
 });
 
 window.addEventListener('load', function() {

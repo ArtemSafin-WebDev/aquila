@@ -9,66 +9,66 @@ export default function community() {
     const elements = Array.from(document.querySelectorAll('.js-community'));
 
     elements.forEach(element => {
-        const links = Array.from(element.querySelectorAll('.community__tabs-nav-link'));
-        const tabs = Array.from(element.querySelectorAll('.community__tab-item'));
-        const indicator = document.createElement('div');
-        indicator.classList.add('community__tabs-indicator');
+        // const links = Array.from(element.querySelectorAll('.community__tabs-nav-link'));
+        // const tabs = Array.from(element.querySelectorAll('.community__tab-item'));
+        // const indicator = document.createElement('div');
+        // indicator.classList.add('community__tabs-indicator');
 
-        let activeIndex = 0;
+        // let activeIndex = 0;
 
-        const setActiveLink = (index, forced = false) => {
-            links.forEach(link => link.classList.remove('active'));
-            links[index].classList.add('active');
-            tabs.forEach(tab => tab.classList.remove('active'));
-            tabs[index].classList.add('active');
+        // const setActiveLink = (index, forced = false) => {
+        //     links.forEach(link => link.classList.remove('active'));
+        //     links[index].classList.add('active');
+        //     tabs.forEach(tab => tab.classList.remove('active'));
+        //     tabs[index].classList.add('active');
 
-            activeIndex = index;
-            if (links.length) {
-                const activeLinkOffsetX = links[index].offsetLeft;
-                const activeLinkOffsetY = links[index].offsetTop;
-                const activeLinkHeight = links[index].offsetHeight;
-                const activeLinkWidth = links[index].offsetWidth;
-                // console.log({
-                //     activeLinkOffsetX,
-                //     activeLinkOffsetY,
-                //     activeLinkHeight,
-                //     activeLinkWidth
-                // })
+        //     activeIndex = index;
+        //     if (links.length) {
+        //         const activeLinkOffsetX = links[index].offsetLeft;
+        //         const activeLinkOffsetY = links[index].offsetTop;
+        //         const activeLinkHeight = links[index].offsetHeight;
+        //         const activeLinkWidth = links[index].offsetWidth;
+        //         // console.log({
+        //         //     activeLinkOffsetX,
+        //         //     activeLinkOffsetY,
+        //         //     activeLinkHeight,
+        //         //     activeLinkWidth
+        //         // })
 
-                gsap.to(indicator, {
-                    x: activeLinkOffsetX,
-                    y: activeLinkOffsetY,
-                    width: activeLinkWidth,
-                    height: activeLinkHeight,
-                    duration: forced ? 0 : 0.2
-                });
-            }
-        };
+        //         gsap.to(indicator, {
+        //             x: activeLinkOffsetX,
+        //             y: activeLinkOffsetY,
+        //             width: activeLinkWidth,
+        //             height: activeLinkHeight,
+        //             duration: forced ? 0 : 0.2
+        //         });
+        //     }
+        // };
 
-        if (!links.length) return;
+        // if (!links.length) return;
 
-        links[0].parentElement.appendChild(indicator);
+        // links[0].parentElement.appendChild(indicator);
 
-        setActiveLink(activeIndex);
+        // setActiveLink(activeIndex);
 
-        window.addEventListener(
-            'resize',
-            debounce(() => {
-                setActiveLink(activeIndex, true);
-            }),
-            300
-        );
+        // window.addEventListener(
+        //     'resize',
+        //     debounce(() => {
+        //         setActiveLink(activeIndex, true);
+        //     }),
+        //     300
+        // );
 
-        window.addEventListener('load', () => {
-            setActiveLink(activeIndex, true);
-        });
+        // window.addEventListener('load', () => {
+        //     setActiveLink(activeIndex, true);
+        // });
 
-        links.forEach((link, linkIndex) => {
-            link.addEventListener('click', event => {
-                event.preventDefault();
-                setActiveLink(linkIndex);
-            });
-        });
+        // links.forEach((link, linkIndex) => {
+        //     link.addEventListener('click', event => {
+        //         event.preventDefault();
+        //         setActiveLink(linkIndex);
+        //     });
+        // });
 
         const row = element.querySelector('.community__row');
         const other = element.querySelector('.community__other');
