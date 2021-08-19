@@ -11,8 +11,10 @@ export default function modalSlider() {
             slidesPerView: 'auto',
             spaceBetween: 10,
             watchOverflow: true,
-            loop: true,
-            centeredSlides: true,
+            loop: false,
+            centeredSlides: false,
+            centeredSlidesBounds: true,
+            threshold: 5,
             loopedSlider: 6,
             navigation: {
                 nextEl: element.querySelector('.modal__slider-button--next'),
