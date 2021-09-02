@@ -20,6 +20,7 @@ import services from './services';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import fancybox from './fancybox';
+import quiz from './quiz';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     services();
     pageNav();
     fancybox();
+    quiz();
 });
 
 window.addEventListener('load', function() {
