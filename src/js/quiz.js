@@ -11,6 +11,10 @@ export default function quiz() {
         const radiosAndCheckboxes = Array.from(element.querySelectorAll('input[type="radio"], input[type="checkbox"]'));
         const btnsWithRequirements = Array.from(element.querySelectorAll('[data-requires]'));
 
+
+        let currentLayer = null;
+        let prevLayer = null;
+
         const setActiveLayer = id => {
             layers.forEach(layer => layer.classList.remove('active'));
             const nextLayer = layers.find(layer =>

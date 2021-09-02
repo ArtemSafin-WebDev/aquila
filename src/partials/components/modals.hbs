@@ -503,7 +503,360 @@
 
                 </div>
             </div>
-            <div class="modal__quiz-layer" data-id="final">
+            <div class="modal__quiz-layer" data-id="marketing, landing, smm">
+                <div class="modal__inner modal__inner--quiz">
+
+                    <button class="modal__close js-close-modal">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                            <use xlink:href="#cross"></use>
+                        </svg>
+                    </button>
+
+                    <div class="modal__content modal__content--quiz">
+
+                        <div class="modal__quiz-slider">
+                            <div class="modal__quiz-slider-top-row">
+                                <h3 class="modal__quiz-heading">
+                                    Ответь несколько вопросов
+                                </h3>
+                                <div class="modal__quiz-pagination">
+                                    3/4
+                                </div>
+                            </div>
+                            <div class="modal__quiz-slider-progress" style="--progress: 0.75;">
+
+                            </div>
+                            <div class="modal__quiz-slider-wrapper">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="modal__quiz-slider-step">
+                                                <h4 class="modal__quiz-slider-step-heading">
+                                                    Есть ли текущий сайт или лендинг?
+                                                </h4>
+                                                <div class="modal__quiz-slider-checkboxes">
+                                                    <label class="modal__quiz-slider-checkbox">
+                                                        <input type="radio" name="existing" value="haswebsite"
+                                                            class="modal__quiz-slider-checkbox-input">
+                                                        <span class="modal__quiz-slider-checkbox-content">
+                                                            <span class="modal__quiz-slider-checkbox-number">
+                                                                01
+                                                            </span>
+                                                            <span class="modal__quiz-slider-checkbox-text">
+                                                                Да
+                                                            </span>
+                                                        </span>
+
+                                                    </label>
+                                                    <label class="modal__quiz-slider-checkbox">
+                                                        <input type="radio" name="existing" value="nowebsite"
+                                                            class="modal__quiz-slider-checkbox-input">
+                                                        <span class="modal__quiz-slider-checkbox-content">
+                                                            <span class="modal__quiz-slider-checkbox-number">
+                                                                02
+                                                            </span>
+                                                            <span class="modal__quiz-slider-checkbox-text">
+                                                                Нет
+                                                            </span>
+                                                        </span>
+
+                                                    </label>
+
+
+                                                </div>
+                                                <div class="modal__quiz-slider-buttons">
+                                                    <button class="modal__quiz-back-btn js-quiz-prev-btn" type="button"
+                                                        data-id="marketing">
+                                                        <svg width="14" height="14" aria-hidden="true"
+                                                            class="icon-slider-arrow-left">
+                                                            <use xlink:href="#slider-arrow-left"></use>
+                                                        </svg>
+                                                        Назад
+                                                    </button>
+
+                                                    <button class="modal__quiz-slider-button js-quiz-next-btn"
+                                                        type="button" data-requires="existing"
+                                                        data-derive-id-from="existing">
+                                                        Далее
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="modal__quiz-layer" data-id="haswebsite">
+                <div class="modal__inner modal__inner--quiz">
+
+                    <button class="modal__close js-close-modal">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                            <use xlink:href="#cross"></use>
+                        </svg>
+                    </button>
+
+                    <div class="modal__content modal__content--quiz">
+
+                        <div class="modal__quiz-slider">
+                            <div class="modal__quiz-slider-top-row">
+                                <h3 class="modal__quiz-heading">
+                                    Ответь несколько вопросов
+                                </h3>
+                                <div class="modal__quiz-pagination">
+                                    4/6
+                                </div>
+                            </div>
+                            <div class="modal__quiz-slider-progress" style="--progress: 0.66;">
+
+                            </div>
+                            <div class="modal__quiz-slider-wrapper">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="modal__quiz-slider-step">
+                                                <h4 class="modal__quiz-slider-step-heading">
+                                                    Оставьте ссылку на сайт
+                                                </h4>
+                                                <div class="modal__quiz-slider-input-wrapper">
+                                                    <textarea name="siteurl" class="modal__quiz-textarea"
+                                                        placeholder="Укажите ссылку"></textarea>
+                                                </div>
+                                                <div class="modal__quiz-slider-buttons">
+                                                    <button class="modal__quiz-back-btn js-quiz-prev-btn" type="button"
+                                                        data-id="tasks">
+                                                        <svg width="14" height="14" aria-hidden="true"
+                                                            class="icon-slider-arrow-left">
+                                                            <use xlink:href="#slider-arrow-left"></use>
+                                                        </svg>
+                                                        Назад
+                                                    </button>
+                                                    <button class="modal__quiz-slider-button js-quiz-next-btn"
+                                                        type="button" data-id="nowebsite" data-requires="siteurl">
+                                                        Далее
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="modal__quiz-layer" data-id="nowebsite">
+                <div class="modal__inner modal__inner--quiz">
+
+                    <button class="modal__close js-close-modal">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                            <use xlink:href="#cross"></use>
+                        </svg>
+                    </button>
+
+                    <div class="modal__content modal__content--quiz">
+
+                        <div class="modal__quiz-slider">
+                            <div class="modal__quiz-slider-top-row">
+                                <h3 class="modal__quiz-heading">
+                                    Ответь несколько вопросов
+                                </h3>
+                                <div class="modal__quiz-pagination">
+                                    4/6
+                                </div>
+                            </div>
+                            <div class="modal__quiz-slider-progress" style="--progress: 0.66;">
+
+                            </div>
+                            <div class="modal__quiz-slider-wrapper">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="modal__quiz-slider-step">
+                                                <h4 class="modal__quiz-slider-step-heading">
+                                                    Запускали вы ранее рекламу?
+                                                </h4>
+                                                <div class="modal__quiz-slider-checkboxes">
+                                                    <label class="modal__quiz-slider-checkbox">
+                                                        <input type="radio" name="experience" value="launched"
+                                                            class="modal__quiz-slider-checkbox-input">
+                                                        <span class="modal__quiz-slider-checkbox-content">
+                                                            <span class="modal__quiz-slider-checkbox-number">
+                                                                01
+                                                            </span>
+                                                            <span class="modal__quiz-slider-checkbox-text">
+                                                                Да
+                                                            </span>
+                                                        </span>
+
+                                                    </label>
+                                                    <label class="modal__quiz-slider-checkbox">
+                                                        <input type="radio" name="experience" value="notlaunched"
+                                                            class="modal__quiz-slider-checkbox-input">
+                                                        <span class="modal__quiz-slider-checkbox-content">
+                                                            <span class="modal__quiz-slider-checkbox-number">
+                                                                02
+                                                            </span>
+                                                            <span class="modal__quiz-slider-checkbox-text">
+                                                                Нет
+                                                            </span>
+                                                        </span>
+
+                                                    </label>
+                                            
+                                                </div>
+                                                <div class="modal__quiz-slider-buttons">
+                                                    <button class="modal__quiz-back-btn js-quiz-prev-btn" type="button"
+                                                        data-id="marketing">
+                                                        <svg width="14" height="14" aria-hidden="true"
+                                                            class="icon-slider-arrow-left">
+                                                            <use xlink:href="#slider-arrow-left"></use>
+                                                        </svg>
+                                                        Назад
+                                                    </button>
+
+                                                    <button class="modal__quiz-slider-button js-quiz-next-btn"
+                                                        type="button" data-requires="experience" data-derive-id-from="experience">
+                                                        Далее
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="modal__quiz-layer" data-id="launched">
+                <div class="modal__inner modal__inner--quiz">
+
+                    <button class="modal__close js-close-modal">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                            <use xlink:href="#cross"></use>
+                        </svg>
+                    </button>
+
+                    <div class="modal__content modal__content--quiz">
+
+                        <div class="modal__quiz-slider">
+                            <div class="modal__quiz-slider-top-row">
+                                <h3 class="modal__quiz-heading">
+                                    Ответь несколько вопросов
+                                </h3>
+                                <div class="modal__quiz-pagination">
+                                    5/6
+                                </div>
+                            </div>
+                            <div class="modal__quiz-slider-progress" style="--progress: 0.83;">
+
+                            </div>
+                            <div class="modal__quiz-slider-wrapper">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="modal__quiz-slider-step">
+                                                <h4 class="modal__quiz-slider-step-heading">
+                                                    В каких источниках?
+                                                    <div class="modal__quiz-slider-step-heading-remark">
+                                                        Можете выбрать несколько ответов
+                                                    </div>
+                                                </h4>
+                                                <div class="modal__quiz-slider-checkboxes">
+                                                    <label class="modal__quiz-slider-checkbox">
+                                                        <input type="checkbox" name="source" value="facebookinstagram"
+                                                            class="modal__quiz-slider-checkbox-input">
+                                                        <span class="modal__quiz-slider-checkbox-content">
+                                                            <span class="modal__quiz-slider-checkbox-number">
+                                                                01
+                                                            </span>
+                                                            <span class="modal__quiz-slider-checkbox-text">
+                                                                Facebook/Instagram
+                                                            </span>
+                                                        </span>
+
+                                                    </label>
+                                                    <label class="modal__quiz-slider-checkbox">
+                                                        <input type="checkbox" name="source" value="vkontakte"
+                                                            class="modal__quiz-slider-checkbox-input">
+                                                        <span class="modal__quiz-slider-checkbox-content">
+                                                            <span class="modal__quiz-slider-checkbox-number">
+                                                                02
+                                                            </span>
+                                                            <span class="modal__quiz-slider-checkbox-text">
+                                                                Вконтакте
+                                                            </span>
+                                                        </span>
+
+                                                    </label>
+                                                    <label class="modal__quiz-slider-checkbox">
+                                                        <input type="checkbox" name="source" value="googleyandex"
+                                                            class="modal__quiz-slider-checkbox-input">
+                                                        <span class="modal__quiz-slider-checkbox-content">
+                                                            <span class="modal__quiz-slider-checkbox-number">
+                                                                03
+                                                            </span>
+                                                            <span class="modal__quiz-slider-checkbox-text">
+                                                                Контекстная реклама (Google, Яндекс)
+                                                            </span>
+                                                        </span>
+
+                                                    </label>
+                                                    <label class="modal__quiz-slider-checkbox">
+                                                        <input type="checkbox" name="source" value="other"
+                                                            class="modal__quiz-slider-checkbox-input">
+                                                        <span class="modal__quiz-slider-checkbox-content">
+                                                            <span class="modal__quiz-slider-checkbox-number">
+                                                                04
+                                                            </span>
+                                                            <span class="modal__quiz-slider-checkbox-text">
+                                                                Другая реклама (блоггеры, TikTok, MyTarget, тизеры и т.д.)
+                                                            </span>
+                                                        </span>
+
+                                                    </label>
+
+                                            
+                                                </div>
+                                                <div class="modal__quiz-slider-buttons">
+                                                    <button class="modal__quiz-back-btn js-quiz-prev-btn" type="button"
+                                                        data-id="nowebsite">
+                                                        <svg width="14" height="14" aria-hidden="true"
+                                                            class="icon-slider-arrow-left">
+                                                            <use xlink:href="#slider-arrow-left"></use>
+                                                        </svg>
+                                                        Назад
+                                                    </button>
+
+                                                    <button class="modal__quiz-slider-button js-quiz-next-btn"
+                                                        type="button" data-requires="source" data-id="final">
+                                                        Далее
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="modal__quiz-layer" data-id="final, notlaunched">
                 <div class="modal__inner modal__inner--callback">
                     <button class="modal__close js-close-modal">
                         <svg width="14" height="14" aria-hidden="true" class="icon-cross">
