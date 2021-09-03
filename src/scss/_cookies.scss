@@ -1,0 +1,88 @@
+.cookies {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    background: #040418;
+    border-radius: 0.4rem;
+    color: white;
+    max-width: 62rem;
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+
+    @include breakpoint(mobile) {
+        right: 0;
+        left: 0;
+        bottom: 0;
+        max-width: none;
+        padding: 1.8rem var(--content-padding);
+        border-radius: 0;
+        border-top-left-radius: .4rem;
+        border-top-right-radius: .4rem;
+    }
+    .cookies-panel-shown & {
+        opacity: 1;
+        visibility: inherit;
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+}
+
+.cookies__top-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    @include breakpoint(mobile) {
+        align-items: flex-start;
+    }
+    svg {
+        width: 5rem;
+        height: 5rem;
+        flex-shrink: 0;
+        fill: white;
+        margin-right: 1.7rem;
+
+        @include breakpoint(mobile) {
+            width: 3rem;
+            height: 3rem;
+            margin-top: 0.5rem;
+        }
+
+    }
+}
+
+.cookies__content {
+    width: 50%;
+    flex-grow: 1;
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
+}
+
+.cookies__accept-btn {
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 3.3rem;
+    margin-left: auto;
+    font-family: var(--euclid);
+    border-bottom: 1px solid rgba(white, 0.5);
+    transition: color 0.2s, border-color 0.2s;
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+    .no-touch &:hover,
+    .touch &:active {
+        border-color: white;
+    }
+}
