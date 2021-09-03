@@ -1,3 +1,5 @@
+import gsap from 'gsap';
+
 export default function quiz() {
     const elements = Array.from(document.querySelectorAll('.js-quiz'));
 
@@ -11,8 +13,9 @@ export default function quiz() {
         const radiosAndCheckboxes = Array.from(element.querySelectorAll('input[type="radio"], input[type="checkbox"]'));
         const btnsWithRequirements = Array.from(element.querySelectorAll('[data-requires]'));
 
+        let activeLayer = null;
+
         const setActiveLayer = id => {
-            layers.forEach(layer => layer.classList.remove('active'));
             const nextLayer = layers.find(layer =>
                 layer.dataset.id
                     .split(',')
@@ -23,10 +26,44 @@ export default function quiz() {
             if (!nextLayer) {
                 console.error('Next layer not found for id:', id);
             } else {
-                console.log('Setting active layer', nextLayer)
+                console.log('Setting active layer', nextLayer);
             }
 
             nextLayer.classList.add('active');
+
+            if (activeLayer) {
+                gsap.to(activeLayer, {
+                    autoAlpha: 0,
+                    duration: 0.5,
+                    ease: 'power2.inOut'
+                }).then(() => {
+                    gsap.set(activeLayer, {
+                        display: 'none'
+                    });
+                    gsap.set(nextLayer, {
+                        display: 'flex'
+                    });
+
+                    gsap.to(nextLayer, {
+                        autoAlpha: 1,
+                        duration: 0.3,
+                        ease: 'power2.inOut'
+                    });
+
+                    activeLayer = nextLayer;
+                });
+            } else {
+                gsap.set(nextLayer, {
+                    display: 'flex'
+                });
+                gsap.to(nextLayer, {
+                    autoAlpha: 1,
+                    duration: 0.3,
+                    ease: 'power2.inOut'
+                });
+
+                activeLayer = nextLayer;
+            }
         };
 
         const checkButtons = () => {
@@ -105,7 +142,7 @@ export default function quiz() {
                     const inputs = Array.from(parentLayer.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea'));
                     const checkboxes = Array.from(parentLayer.querySelectorAll('input[type="radio"], input[type="checkbox"]'));
                     inputs.forEach(input => (input.value = ''));
-                    checkboxes.forEach(box => box.checked = false);
+                    checkboxes.forEach(box => (box.checked = false));
                     const nextBtn = parentLayer.querySelector('.js-quiz-next-btn');
                     nextBtn.disabled = true;
                 }
