@@ -6116,6 +6116,10 @@ select:-webkit-autofill:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 640px) {
+    .modal__quiz-slider-top-row {
+      margin-bottom: 1.6rem;
+      margin-top: 4rem; } }
 
 .modal__quiz-heading {
   font-weight: 500;
@@ -6129,6 +6133,9 @@ select:-webkit-autofill:focus {
   font-size: 1.8rem;
   line-height: 2.3rem;
   color: rgba(7, 60, 189, 0.2); }
+  @media only screen and (max-width: 640px) {
+    .modal__quiz-pagination {
+      font-size: 1.6rem; } }
 
 .modal__quiz-slider-progress {
   position: relative;
@@ -6139,6 +6146,10 @@ select:-webkit-autofill:focus {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 640px) {
+    .modal__quiz-slider-progress {
+      height: 0.3rem;
+      margin-bottom: 2rem; } }
   .modal__quiz-slider-progress::before {
     content: '';
     position: absolute;
@@ -6170,6 +6181,9 @@ select:-webkit-autofill:focus {
   line-height: 1.2;
   margin-bottom: 2.5rem;
   font-weight: 400; }
+  @media only screen and (max-width: 640px) {
+    .modal__quiz-slider-step-heading {
+      font-size: 2.6rem; } }
 
 .modal__quiz-textarea {
   display: block;
@@ -6193,6 +6207,11 @@ select:-webkit-autofill:focus {
     color: rgba(4, 4, 24, 0.4); }
   .modal__quiz-textarea:-ms-input-placeholder {
     color: rgba(4, 4, 24, 0.4); }
+  @media only screen and (max-width: 640px) {
+    .modal__quiz-textarea {
+      height: 10rem;
+      padding: 1rem 1.5rem;
+      font-size: 1.8rem; } }
 
 .modal__quiz-slider-buttons {
   margin-top: 3rem;
@@ -6229,6 +6248,11 @@ select:-webkit-autofill:focus {
   margin-left: auto;
   -webkit-transition: background-color 0.2s, color 0.2s, opacity 0.2s;
   transition: background-color 0.2s, color 0.2s, opacity 0.2s; }
+  @media only screen and (max-width: 640px) {
+    .modal__quiz-slider-button {
+      font-size: 1.8rem;
+      line-height: 1.2;
+      padding: 1.7rem 2.4rem; } }
   .modal__quiz-slider-button:link, .modal__quiz-slider-button:visited {
     color: white; }
   .no-touch .modal__quiz-slider-button:hover,
@@ -6249,7 +6273,8 @@ select:-webkit-autofill:focus {
           flex-direction: column;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
-          flex-grow: 1; }
+          flex-grow: 1;
+  display: contents; }
 
 .modal__quiz-layers {
   display: -webkit-box;
@@ -6300,6 +6325,9 @@ select:-webkit-autofill:focus {
       -ms-user-select: none;
           user-select: none;
   cursor: pointer; }
+  @media only screen and (max-width: 640px) {
+    .modal__quiz-slider-checkbox {
+      margin-bottom: 1rem; } }
   .modal__quiz-slider-checkbox:last-child {
     margin-bottom: 0; }
 
@@ -6322,6 +6350,11 @@ select:-webkit-autofill:focus {
   color: #040418;
   -webkit-transition: background-color 0.2s, color 0.2s, border-color 0.2s;
   transition: background-color 0.2s, color 0.2s, border-color 0.2s; }
+  @media only screen and (max-width: 640px) {
+    .modal__quiz-slider-checkbox-content {
+      padding: 1rem;
+      font-size: 1.6rem;
+      line-height: 1.2; } }
 
 .modal__quiz-slider-checkbox-number {
   width: 4.7rem;
@@ -6352,6 +6385,13 @@ select:-webkit-autofill:focus {
   background-color: #e7ecf9;
   -webkit-transition: background-color 0.2s, color 0.2s;
   transition: background-color 0.2s, color 0.2s; }
+  @media only screen and (max-width: 640px) {
+    .modal__quiz-slider-checkbox-number {
+      width: 3.6rem;
+      height: 3.6rem;
+      font-size: 1.6rem;
+      margin-right: 1.5rem;
+      line-height: 1.2; } }
 
 .modal__quiz-slider-checkbox-input:checked ~ .modal__quiz-slider-checkbox-content {
   background-color: var(--primary-color);
@@ -6373,6 +6413,9 @@ select:-webkit-autofill:focus {
   line-height: 4.4rem;
   color: #cfd5e7;
   margin-right: 3rem; }
+  @media only screen and (max-width: 640px) {
+    .modal__quiz-back-btn {
+      font-size: 1.8rem; } }
   .modal__quiz-back-btn svg {
     width: 2rem;
     height: 2rem;
@@ -6381,6 +6424,11 @@ select:-webkit-autofill:focus {
     margin-right: 1.6rem;
     fill: currentColor;
     margin-top: 0.2rem; }
+    @media only screen and (max-width: 640px) {
+      .modal__quiz-back-btn svg {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: 1.4rem; } }
   .no-touch .modal__quiz-back-btn:hover,
   .touch .modal__quiz-back-btn:active {
     color: var(--primary-color); }

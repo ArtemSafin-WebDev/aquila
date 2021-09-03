@@ -695,6 +695,11 @@
     align-items: baseline;
     justify-content: space-between;
     margin-bottom: 3rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 1.6rem;
+        margin-top: 4rem;
+    }
 }
 
 .modal__quiz-heading {
@@ -710,6 +715,10 @@
     font-size: 1.8rem;
     line-height: 2.3rem;
     color: rgba(#073cbd, 0.2);
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+    }
 }
 
 .modal__quiz-slider-progress {
@@ -720,7 +729,13 @@
     overflow: hidden;
     backface-visibility: hidden;
 
+   
+
     margin-bottom: 3rem;
+    @include breakpoint(mobile) {
+        height: 0.3rem;
+        margin-bottom: 2rem;
+    }
     &::before {
         content: '';
         position: absolute;
@@ -745,6 +760,10 @@
     line-height: 1.2;
     margin-bottom: 2.5rem;
     font-weight: 400;
+
+    @include breakpoint(mobile) {
+        font-size: 2.6rem;
+    }
 }
 
 .modal__quiz-textarea {
@@ -763,6 +782,12 @@
     line-height: 2.5rem;
     @include placeholder {
         color: rgba(#040418, 0.4);
+    }
+
+    @include breakpoint(mobile) {
+        height: 10rem;
+        padding: 1rem 1.5rem;
+        font-size: 1.8rem;
     }
 }
 .modal__quiz-slider-input-wrapper {
@@ -790,6 +815,12 @@
     line-height: 4.4rem;
     margin-left: auto;
     transition: background-color 0.2s, color 0.2s, opacity 0.2s;
+
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        padding: 1.7rem 2.4rem;
+    }
     &:link,
     &:visited {
         color: white;
@@ -811,6 +842,8 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+
+    display: contents;
 }
 
 .modal__quiz-layers {
@@ -846,6 +879,10 @@
     display: block;
     user-select: none;
     cursor: pointer;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 1rem;
+    }
     &:last-child {
         margin-bottom: 0;
     }
@@ -866,6 +903,12 @@
     letter-spacing: -0.01em;
     color: #040418;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+
+    @include breakpoint(mobile) {
+        padding: 1rem;
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
 }
 
 .modal__quiz-slider-checkbox-number {
@@ -886,6 +929,14 @@
     text-align: center;
     background-color: #e7ecf9;
     transition: background-color 0.2s, color 0.2s;
+
+    @include breakpoint(mobile) {
+        width: 3.6rem;
+        height: 3.6rem;
+        font-size: 1.6rem;
+        margin-right: 1.5rem;
+        line-height: 1.2;
+    }
 }
 
 .modal__quiz-slider-checkbox-input:checked ~ .modal__quiz-slider-checkbox-content {
@@ -907,6 +958,10 @@
     line-height: 4.4rem;
     color: #cfd5e7;
     margin-right: 3rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+    }
     svg {
         width: 2rem;
         height: 2rem;
@@ -914,6 +969,12 @@
         margin-right: 1.6rem;
         fill: currentColor;
         margin-top: 0.2rem;
+
+        @include breakpoint(mobile) {
+            width: 1.6rem;
+            height: 1.6rem;
+            margin-right: 1.4rem;
+        }
     }
 
     .no-touch &:hover,

@@ -11,10 +11,6 @@ export default function quiz() {
         const radiosAndCheckboxes = Array.from(element.querySelectorAll('input[type="radio"], input[type="checkbox"]'));
         const btnsWithRequirements = Array.from(element.querySelectorAll('[data-requires]'));
 
-
-        let currentLayer = null;
-        let prevLayer = null;
-
         const setActiveLayer = id => {
             layers.forEach(layer => layer.classList.remove('active'));
             const nextLayer = layers.find(layer =>
@@ -26,6 +22,8 @@ export default function quiz() {
 
             if (!nextLayer) {
                 console.error('Next layer not found for id:', id);
+            } else {
+                console.log('Setting active layer', nextLayer)
             }
 
             nextLayer.classList.add('active');
@@ -66,6 +64,12 @@ export default function quiz() {
             nextBtns.forEach(btn => (btn.disabled = true));
         };
 
+        window.startQuiz = startQuiz;
+
+        document.addEventListener('closemodal', () => {
+            startQuiz();
+        });
+
         startQuiz();
 
         nextBtns.forEach(btn => {
@@ -94,6 +98,17 @@ export default function quiz() {
                 event.preventDefault();
 
                 const id = btn.dataset.id;
+
+                const parentLayer = btn.closest('.modal__quiz-slider');
+
+                if (parentLayer) {
+                    const inputs = Array.from(parentLayer.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea'));
+                    const checkboxes = Array.from(parentLayer.querySelectorAll('input[type="radio"], input[type="checkbox"]'));
+                    inputs.forEach(input => (input.value = ''));
+                    checkboxes.forEach(box => box.checked = false);
+                    const nextBtn = parentLayer.querySelector('.js-quiz-next-btn');
+                    nextBtn.disabled = true;
+                }
 
                 console.log('Clicked btn id', id);
 
