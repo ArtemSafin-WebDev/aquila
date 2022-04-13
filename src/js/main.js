@@ -22,6 +22,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import fancybox from './fancybox';
 import quiz from './quiz';
 import cookies from './cookies';
+import menu from './menu';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fancybox();
     quiz();
     cookies();
+    menu();
 });
 
 window.addEventListener('load', function() {

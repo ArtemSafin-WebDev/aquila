@@ -6,24 +6,8 @@
     }
 }
 
-.about__row {
-    display: grid;
-    grid-template-columns: minmax(0, var(--sidebar-width)) minmax(0, 1fr);
-
-    @include breakpoint(mobile) {
-        grid-template-columns: minmax(0, 1fr);
-        grid-gap: 4rem;
-        display: contents;
-    }
-}
-
-.about__sidebar {
-    @include breakpoint(mobile) {
-        display: none;
-    }
-}
-
 .about__main {
+    padding-left: var(--sidebar-width);
     @include breakpoint(mobile) {
         display: grid;
         grid-template-columns: minmax(0, 1fr);
@@ -52,9 +36,7 @@
     width: 100%;
     height: auto;
     @include breakpointMF(small-tablet) {
-      
         max-width: 57rem;
-
     }
 
     @include breakpoint(mobile) {
@@ -109,21 +91,33 @@
     }
 }
 
-
-
 .about__achievements-list-item {
     border-bottom: 1px solid rgba(#000000, 0.1);
 }
 
 .about__achievements-card {
     display: grid;
+    position: relative;
+
+    .no-touch &:hover,
+    .touch &:active {
+        color: var(--primary-color);
+        .about__achievements-card-icon {
+            opacity: 0;
+        }
+
+        .about__achievements-card-watch-text {
+            opacity: 1;
+            visibility: inherit;
+            transition: opacity .2s, visibility .2s;
+        }
+    }
 
     @include breakpointMF(small-tablet) {
         grid-template-columns: minmax(0, 1fr) minmax(0, 63rem);
         grid-gap: 3rem;
         padding: 2.8rem 0;
         align-items: center;
-       
     }
 
     @include breakpoint(mobile) {
@@ -166,4 +160,21 @@
     height: 3.5rem;
     flex-shrink: 0;
     object-fit: contain;
+    transition: opacity 0.2s;
+}
+
+.about__achievements-card-watch-text {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.01em;
+    color: var(--primary-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0s linear 0.2s;
 }

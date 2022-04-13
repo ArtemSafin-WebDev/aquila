@@ -15,31 +15,124 @@
 
 <body class="no-touch" ontouchstart="">
     <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
-        <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 26" id="calendar" xmlns="http://www.w3.org/2000/svg"><path d="M22 2h-3V1a1 1 0 00-2 0v1H7V1a1 1 0 00-2 0v1H2a2 2 0 00-2 2v20a2 2 0 002 2h20a2 2 0 002-2V4a2 2 0 00-2-2zM5 4v1a1 1 0 002 0V4h10v1a1 1 0 002 0V4h3v4H2V4zM2 24V10h20v14z"/></symbol><symbol viewBox="0 0 13.2 10.05" id="checkbox-mark" xmlns="http://www.w3.org/2000/svg"><path d="M4.2 8L1.05 4.8l-1 1 4.2 4.2 9-9-1-1z"/></symbol><symbol viewBox="0 0 18.5 13" id="checkmark" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 13a1 1 0 01-.71-.29l-5.5-5.5a1 1 0 011.42-1.42l4.79 4.79L16.79.29a1 1 0 111.42 1.42l-11 11a1 1 0 01-.71.29z"/></symbol><symbol viewBox="0 0 26 26" id="clock" xmlns="http://www.w3.org/2000/svg"><path d="M13 26a13 13 0 1113-13 13 13 0 01-13 13zm0-24a11 11 0 1011 11A11 11 0 0013 2z"/><path d="M20 14h-7a1 1 0 01-1-1V6a1 1 0 012 0v6h6a1 1 0 010 2z"/></symbol><symbol id="cookie" viewBox="0 0 51 51" xmlns="http://www.w3.org/2000/svg"><defs><style>.ecls-1{fill:#fff}</style></defs><path class="ecls-1" d="M50.55 20.78a1.59 1.59 0 00-3-.36 3.17 3.17 0 01-5.96-.42 1.6 1.6 0 00-1.89-1.09 6.19 6.19 0 01-1.45.18 6.38 6.38 0 01-6.37-6.37 6.19 6.19 0 01.18-1.45A1.6 1.6 0 0031 9.41a3.17 3.17 0 01-.39-5.94 1.6 1.6 0 00.93-1.64A1.61 1.61 0 0030.22.45 26 26 0 0025.5 0 25.5 25.5 0 1051 25.5a26 26 0 00-.45-4.72zm-9.28 20.49A22.3 22.3 0 1125.5 3.19h.85a6.27 6.27 0 002.4 8.65 8.29 8.29 0 00-.06.87 9.56 9.56 0 009.56 9.56 8.29 8.29 0 00.87-.06 6.27 6.27 0 008.65 2.4v.85a22.24 22.24 0 01-6.5 15.81z"/><path class="ecls-1" d="M19.12 15.94a3.19 3.19 0 10-3.18-3.19 3.19 3.19 0 003.18 3.19zM12.75 28.69a3.19 3.19 0 10-3.19-3.19 3.19 3.19 0 003.19 3.19zM28.69 41.44a3.19 3.19 0 10-3.19-3.19 3.19 3.19 0 003.19 3.19zM27.09 28.69a1.6 1.6 0 100-3.19 1.6 1.6 0 000 3.19zM39.84 35.06a1.59 1.59 0 10-1.59-1.59 1.6 1.6 0 001.59 1.59zM17.53 38.25a1.6 1.6 0 10-1.59-1.59 1.59 1.59 0 001.59 1.59z"/></symbol><symbol viewBox="0 0 31.5 31.5" id="cross" xmlns="http://www.w3.org/2000/svg"><path d="M18.32 15.66L31.08 2.91a1.74 1.74 0 00.42-1.21A1.75 1.75 0 0029.82 0a1.74 1.74 0 00-1.21.42L15.85 13.2 3.1.42A1.74 1.74 0 001.89 0 1.75 1.75 0 00.21 1.68a1.74 1.74 0 00.42 1.21l12.76 12.77L.61 28.42a1.89 1.89 0 00-.44.58 1.8 1.8 0 00-.17.69 1.74 1.74 0 00.12.71 1.83 1.83 0 00.39.6 1.83 1.83 0 00.6.39 1.74 1.74 0 00.71.12 1.8 1.8 0 00.69-.17 1.89 1.89 0 00.57-.44l12.77-12.77 12.76 12.76a1.79 1.79 0 001.21.42A1.77 1.77 0 0031 30.8a1.79 1.79 0 00.51-1.17 1.74 1.74 0 00-.42-1.21z"/></symbol><symbol viewBox="0 0 42.25 27.87" id="eye" xmlns="http://www.w3.org/2000/svg"><path d="M21.13 27.87c-14.86 0-21-13.39-21-13.52a1 1 0 010-.82C.15 13.4 6.27 0 21.13 0s21 13.4 21 13.53a1 1 0 010 .82c-.03.13-6.13 13.52-21 13.52zm-19-13.93c1.1 2.17 6.73 11.93 19 11.93s17.91-9.76 19-11.93C39 11.77 33.41 2 21.13 2S3.21 11.77 2.11 13.94z"/><path d="M21.13 22.13a8.19 8.19 0 118.18-8.19 8.2 8.2 0 01-8.18 8.19zm0-14.38a6.19 6.19 0 106.18 6.19 6.19 6.19 0 00-6.18-6.19z"/></symbol><symbol id="instagram" viewBox="0 0 18.33 18.33" xmlns="http://www.w3.org/2000/svg"><defs><style>.hcls-1{fill-rule:evenodd}</style></defs><path class="hcls-1" d="M5.39.06C6.37 0 6.68 0 9.17 0S12 0 12.94.06a6.79 6.79 0 012.23.42 4.39 4.39 0 011.62 1.06 4.47 4.47 0 011.06 1.62 6.82 6.82 0 01.43 2.23v7.56a6.75 6.75 0 01-.43 2.22 4.66 4.66 0 01-2.68 2.68 6.75 6.75 0 01-2.22.43H5.39a6.82 6.82 0 01-2.23-.43 4.58 4.58 0 01-1.62-1.05 4.51 4.51 0 01-1.06-1.63A6.78 6.78 0 01.06 13C0 12 0 11.66 0 9.17s0-2.81.06-3.78a6.85 6.85 0 01.42-2.23 4.47 4.47 0 011.06-1.62A4.47 4.47 0 013.16.48 6.85 6.85 0 015.39.06zm7.48 1.65c-1-.05-1.26-.06-3.7-.06s-2.74 0-3.71.06a5.23 5.23 0 00-1.7.29 2.87 2.87 0 00-1 .69 2.75 2.75 0 00-.69 1 5.23 5.23 0 00-.31 1.7c-.05 1-.06 1.26-.06 3.71s0 2.73.06 3.7A5.17 5.17 0 002 14.57a2.86 2.86 0 00.69 1.06 2.72 2.72 0 001 .68 4.9 4.9 0 001.7.32c1 0 1.26.05 3.71.05s2.73 0 3.7-.05a4.9 4.9 0 001.7-.32 2.76 2.76 0 001.06-.68 2.84 2.84 0 00.68-1.06 4.84 4.84 0 00.32-1.7c0-1 .05-1.26.05-3.7s0-2.74-.05-3.71a4.9 4.9 0 00-.32-1.7 2.72 2.72 0 00-.68-1 2.86 2.86 0 00-.99-.76 5.23 5.23 0 00-1.7-.29zM8 12a3 3 0 003.71-1.12 3 3 0 00.5-2 3 3 0 00-2-2.58 3.17 3.17 0 00-1.33-.17 3.22 3.22 0 00-1.28.42 3.3 3.3 0 00-1 .93 3.07 3.07 0 00-.48 1.25 3.14 3.14 0 00.1 1.33 3 3 0 00.66 1.17A2.93 2.93 0 008 12zM5.84 5.84a4.65 4.65 0 011.52-1 4.91 4.91 0 011.81-.36 4.69 4.69 0 013.33 1.36 4.62 4.62 0 011 1.52 4.71 4.71 0 01.36 1.81 4.63 4.63 0 01-.36 1.8 4.7 4.7 0 01-4.35 2.91 4.7 4.7 0 01-3.33-8zm9.08-.68a1.18 1.18 0 00.26-.37 1 1 0 00.09-.43 1.06 1.06 0 00-.08-.43 1 1 0 00-.19-.37 1.15 1.15 0 00-.37-.25 1.32 1.32 0 00-.44-.08 1.08 1.08 0 00-.43.1 1 1 0 00-.36.25 1.13 1.13 0 00-.31.78 1.15 1.15 0 00.33.77 1.08 1.08 0 00.77.33 1.12 1.12 0 00.73-.3z"/></symbol><symbol id="large-white-arrow" viewBox="0 0 134.42 122.89" xmlns="http://www.w3.org/2000/svg"><defs><style>.icls-1{fill-rule:evenodd}</style></defs><path class="icls-1" d="M132.51 56.83L130.68 55l-.32-.32L77.59 1.91a6.52 6.52 0 10-9.22 9.23l41 41H9.34a9.35 9.35 0 000 18.69h100l-41 41a6.52 6.52 0 109.25 9.17l52.73-52.73c.14-.13.27-.26.4-.4l1.79-1.79a6.52 6.52 0 000-9.25zm-2.12 7.11l-1.8 1.79-.06.07a2.23 2.23 0 01-.27.26l-.06.06-52.73 52.74a3.52 3.52 0 11-5-5l41-41a3 3 0 00-2.12-5.12H9.34a6.35 6.35 0 010-12.69h100a3 3 0 002.11-5.05l-41-41a3.52 3.52 0 115-5l52.79 52.8a2.28 2.28 0 01.22.22h.05l1.88 1.98a3.52 3.52 0 010 4.94z"/></symbol><symbol viewBox="0 0 23.03 12.25" id="long-arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M.89 5.25h19.36L17 1.44A.87.87 0 0117.15.2a.89.89 0 01.65-.2.94.94 0 01.6.32l4.42 5.25a.57.57 0 01.08.13s0 .07.07.11a.87.87 0 01.06.32.85.85 0 01-.06.31s0 .07-.07.11a1 1 0 01-.08.14l-4.42 5.25a1.19 1.19 0 01-.31.23 1 1 0 01-.38.08.89.89 0 01-.56-.2.73.73 0 01-.22-.27.75.75 0 01-.1-.32.78.78 0 010-.34.79.79 0 01.16-.3L20.25 7H.89a.88.88 0 01-.63-.26.86.86 0 010-1.23.88.88 0 01.63-.26z"/></symbol><symbol id="pdf" viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg"><defs><style>.kcls-1{fill:#073cbd}</style></defs><path class="kcls-1" d="M8 0a8 8 0 00-8 8v48a8 8 0 008 8h32a8 8 0 008-8V8a8 8 0 00-8-8zm0 4h32a4 4 0 014 4v48a4 4 0 01-4 4H8a4 4 0 01-4-4V8a4 4 0 014-4z"/><path class="kcls-1" d="M10.41 48.35a3.23 3.23 0 01-1.75-1.68A4.29 4.29 0 019 42.26a10.6 10.6 0 013.59-3.15 30.94 30.94 0 015.93-2.58 77.27 77.27 0 004.24-8.91A29.14 29.14 0 0121 22.44a11.19 11.19 0 01-.18-4.54 4.31 4.31 0 012.6-3.29 4.18 4.18 0 012.41-.31 2.8 2.8 0 011.12.52 2.76 2.76 0 01.79.94 4.88 4.88 0 01.5 2.15 12.68 12.68 0 01-.18 2.46A39.66 39.66 0 0126 27.54a43.3 43.3 0 003.92 6.75 22.63 22.63 0 015.33.2 6.36 6.36 0 013.84 1.86 3.38 3.38 0 01.8 2.07 4.65 4.65 0 01-.55 2.25 4.18 4.18 0 01-1.42 1.67 3.47 3.47 0 01-2 .55 6.86 6.86 0 01-3.73-1.67 23 23 0 01-3.64-3.8 47.16 47.16 0 00-8 1.62 45.68 45.68 0 01-4.08 6 10.83 10.83 0 01-3.71 3.15 3.21 3.21 0 01-2.35.16zm5.52-7.61c-.67.31-1.28.63-1.84 1a7.92 7.92 0 00-2.59 2.18 1.34 1.34 0 00-.16 1.45.55.55 0 00.11.17h.14a8.18 8.18 0 002.54-2.29q.96-1.25 1.8-2.51zm6.56-5.32c1.33-.31 2.68-.57 4-.77-.73-1.11-1.41-2.26-2-3.43q-.94 2.13-2 4.2zm9.78 1.8A16 16 0 0034 38.86a4 4 0 002 1 .45.45 0 00.28-.06 1.24 1.24 0 00.38-.5 1.91 1.91 0 00.24-.8.36.36 0 00-.11-.25 3.66 3.66 0 00-2.07-.84 14.39 14.39 0 00-2.45-.21zm-8-14a25.32 25.32 0 00.8-3.31 8.94 8.94 0 00.19-1.91 2.33 2.33 0 00-.12-.79 1.67 1.67 0 00-.58.16 1.34 1.34 0 00-.79 1.13 8.27 8.27 0 00.23 3.32 14.13 14.13 0 00.36 1.38z"/></symbol><symbol viewBox="0 0 17.23 14.46" id="slider-arrow-left" xmlns="http://www.w3.org/2000/svg"><path d="M16.23 6.23H3.41l4.53-4.52A1 1 0 106.52.29L.29 6.52a1 1 0 00-.21.32 1 1 0 00-.08.39 1 1 0 00.08.38 1 1 0 00.21.33l6.23 6.23a1 1 0 00.71.29 1 1 0 00.71-.29 1 1 0 000-1.42L3.41 8.23h12.82a1 1 0 000-2z"/></symbol><symbol viewBox="0 0 17.23 14.46" id="slider-arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M17.15 7.61a1 1 0 00.05-.24.7.7 0 000-.14.7.7 0 000-.14 1 1 0 00-.05-.24 1 1 0 00-.22-.33L10.7.29a1 1 0 00-1.41 0 1 1 0 000 1.42l4.52 4.52H1a1 1 0 000 2h12.81l-4.52 4.52a1 1 0 000 1.42 1 1 0 00.71.29 1 1 0 00.7-.29l6.23-6.23a1.06 1.06 0 00.22-.33z"/></symbol><symbol id="stars" viewBox="0 0 49 46" xmlns="http://www.w3.org/2000/svg"><defs><style>.ncls-1{fill:#073cbd;fill-rule:evenodd}</style></defs><path class="ncls-1" d="M3.61 27.93A20.87 20.87 0 010 29a20.87 20.87 0 013.61 1.07 21.77 21.77 0 0112.32 12.32A21.13 21.13 0 0117 46a21.13 21.13 0 011.07-3.61 21.77 21.77 0 0112.32-12.32A21.13 21.13 0 0134 29a21.13 21.13 0 01-3.61-1.07 21.77 21.77 0 01-12.32-12.32A21.13 21.13 0 0117 12a21.13 21.13 0 01-1.07 3.61A21.77 21.77 0 013.61 27.93zM6.14 29A23.8 23.8 0 0117 39.86 23.8 23.8 0 0127.86 29 23.8 23.8 0 0117 18.14 23.8 23.8 0 016.14 29zM38 0l-.07.38a14.23 14.23 0 01-1 3.12 14.11 14.11 0 01-6.71 6.88A14.55 14.55 0 0127 11.5a14.55 14.55 0 013.2 1.09 14.23 14.23 0 017.72 10L38 23l.07-.38a14.23 14.23 0 017.72-10A14.55 14.55 0 0149 11.5a14.55 14.55 0 01-3.2-1.09 14.11 14.11 0 01-6.71-6.88 14.23 14.23 0 01-1-3.12zm0 5.79a16.2 16.2 0 01-5.63 5.71A16.2 16.2 0 0138 17.21a16.2 16.2 0 015.63-5.71A16.2 16.2 0 0138 5.79z"/></symbol><symbol id="submit-arrow" viewBox="0 0 45.95 42.35" xmlns="http://www.w3.org/2000/svg"><defs><style>.ocls-1{fill-rule:evenodd}</style></defs><path class="ocls-1" d="M4.92 26.09a4.92 4.92 0 110-9.83h26.37l-9.37-9.37a4 4 0 115.71-5.71l16.45 16.46.13.12.56.56a4 4 0 010 5.71l-.54.53-.17.17-16.43 16.44a4 4 0 01-5.71-5.71l9.37-9.37zm31.2-2L23.33 36.87a2 2 0 102.88 2.88L42.66 23.3a1.59 1.59 0 00.13-.13l.56-.56a2 2 0 000-2.88l-.57-.57-.1-.09L26.21 2.6a2 2 0 00-2.88 2.88l12.79 12.78H4.92a2.92 2.92 0 100 5.83z"/></symbol><symbol viewBox="0 0 18.48 15.43" id="telegram" xmlns="http://www.w3.org/2000/svg"><path d="M.86 6.37L17.25.08c.75-.28 1.42.18 1.18 1.33L15.64 14.5c-.21.93-.76 1.16-1.54.72L9.85 12.1l-2 2a1.06 1.06 0 01-.85.41l.3-4.31 7.87-7.08c.35-.3-.07-.47-.53-.17L4.86 9 .67 7.72c-.91-.29-.93-.91.19-1.35z"/></symbol><symbol viewBox="0 0 27.92 23.2" id="thin-slider-arrow-left" xmlns="http://www.w3.org/2000/svg"><path d="M26.92 10.6H3.41l8.9-8.89a1 1 0 000-1.42 1 1 0 00-1.41 0L.29 10.89a1.15 1.15 0 00-.21.33 1 1 0 00-.08.38 1 1 0 00.08.4 1 1 0 00.21.32L10.9 22.91a1 1 0 00.7.29 1 1 0 00.71-.29 1 1 0 000-1.41l-8.9-8.9h23.51a1 1 0 000-2z"/></symbol><symbol viewBox="0 0 27.92 23.2" id="thin-slider-arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M27.84 12a1 1 0 00.08-.39 1 1 0 00-.3-.71L17 .29a1 1 0 00-1.41 0 1 1 0 000 1.42l8.91 8.89H1a1 1 0 000 2h23.5l-8.89 8.9a1 1 0 000 1.41 1 1 0 001.41 0l10.6-10.6a.87.87 0 00.22-.31z"/></symbol></svg>    </div>
+        <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 26" id="calendar" xmlns="http://www.w3.org/2000/svg"><path d="M22 2h-3V1a1 1 0 00-2 0v1H7V1a1 1 0 00-2 0v1H2a2 2 0 00-2 2v20a2 2 0 002 2h20a2 2 0 002-2V4a2 2 0 00-2-2zM5 4v1a1 1 0 002 0V4h10v1a1 1 0 002 0V4h3v4H2V4zM2 24V10h20v14z"/></symbol><symbol viewBox="0 0 13.2 10.05" id="checkbox-mark" xmlns="http://www.w3.org/2000/svg"><path d="M4.2 8L1.05 4.8l-1 1 4.2 4.2 9-9-1-1z"/></symbol><symbol viewBox="0 0 18.5 13" id="checkmark" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 13a1 1 0 01-.71-.29l-5.5-5.5a1 1 0 011.42-1.42l4.79 4.79L16.79.29a1 1 0 111.42 1.42l-11 11a1 1 0 01-.71.29z"/></symbol><symbol viewBox="0 0 26 26" id="clock" xmlns="http://www.w3.org/2000/svg"><path d="M13 26a13 13 0 1113-13 13 13 0 01-13 13zm0-24a11 11 0 1011 11A11 11 0 0013 2z"/><path d="M20 14h-7a1 1 0 01-1-1V6a1 1 0 012 0v6h6a1 1 0 010 2z"/></symbol><symbol id="cookie" viewBox="0 0 51 51" xmlns="http://www.w3.org/2000/svg"><defs><style>.ecls-1{fill:#fff}</style></defs><path class="ecls-1" d="M50.55 20.78a1.59 1.59 0 00-3-.36 3.17 3.17 0 01-5.96-.42 1.6 1.6 0 00-1.89-1.09 6.19 6.19 0 01-1.45.18 6.38 6.38 0 01-6.37-6.37 6.19 6.19 0 01.18-1.45A1.6 1.6 0 0031 9.41a3.17 3.17 0 01-.39-5.94 1.6 1.6 0 00.93-1.64A1.61 1.61 0 0030.22.45 26 26 0 0025.5 0 25.5 25.5 0 1051 25.5a26 26 0 00-.45-4.72zm-9.28 20.49A22.3 22.3 0 1125.5 3.19h.85a6.27 6.27 0 002.4 8.65 8.29 8.29 0 00-.06.87 9.56 9.56 0 009.56 9.56 8.29 8.29 0 00.87-.06 6.27 6.27 0 008.65 2.4v.85a22.24 22.24 0 01-6.5 15.81z"/><path class="ecls-1" d="M19.12 15.94a3.19 3.19 0 10-3.18-3.19 3.19 3.19 0 003.18 3.19zM12.75 28.69a3.19 3.19 0 10-3.19-3.19 3.19 3.19 0 003.19 3.19zM28.69 41.44a3.19 3.19 0 10-3.19-3.19 3.19 3.19 0 003.19 3.19zM27.09 28.69a1.6 1.6 0 100-3.19 1.6 1.6 0 000 3.19zM39.84 35.06a1.59 1.59 0 10-1.59-1.59 1.6 1.6 0 001.59 1.59zM17.53 38.25a1.6 1.6 0 10-1.59-1.59 1.59 1.59 0 001.59 1.59z"/></symbol><symbol viewBox="0 0 31.5 31.5" id="cross" xmlns="http://www.w3.org/2000/svg"><path d="M18.32 15.66L31.08 2.91a1.74 1.74 0 00.42-1.21A1.75 1.75 0 0029.82 0a1.74 1.74 0 00-1.21.42L15.85 13.2 3.1.42A1.74 1.74 0 001.89 0 1.75 1.75 0 00.21 1.68a1.74 1.74 0 00.42 1.21l12.76 12.77L.61 28.42a1.89 1.89 0 00-.44.58 1.8 1.8 0 00-.17.69 1.74 1.74 0 00.12.71 1.83 1.83 0 00.39.6 1.83 1.83 0 00.6.39 1.74 1.74 0 00.71.12 1.8 1.8 0 00.69-.17 1.89 1.89 0 00.57-.44l12.77-12.77 12.76 12.76a1.79 1.79 0 001.21.42A1.77 1.77 0 0031 30.8a1.79 1.79 0 00.51-1.17 1.74 1.74 0 00-.42-1.21z"/></symbol><symbol viewBox="0 0 42.25 27.87" id="eye" xmlns="http://www.w3.org/2000/svg"><path d="M21.13 27.87c-14.86 0-21-13.39-21-13.52a1 1 0 010-.82C.15 13.4 6.27 0 21.13 0s21 13.4 21 13.53a1 1 0 010 .82c-.03.13-6.13 13.52-21 13.52zm-19-13.93c1.1 2.17 6.73 11.93 19 11.93s17.91-9.76 19-11.93C39 11.77 33.41 2 21.13 2S3.21 11.77 2.11 13.94z"/><path d="M21.13 22.13a8.19 8.19 0 118.18-8.19 8.2 8.2 0 01-8.18 8.19zm0-14.38a6.19 6.19 0 106.18 6.19 6.19 6.19 0 00-6.18-6.19z"/></symbol><symbol fill="none" viewBox="0 0 30 30" id="gradient-arrow" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="url(#hpaint0_linear_1058_205)"/><path fill-rule="evenodd" clip-rule="evenodd" d="M15.17 10.505a.583.583 0 01.826 0l4.083 4.083a.583.583 0 010 .825l-4.083 4.084a.583.583 0 11-.825-.825l3.087-3.088h-7.925a.583.583 0 010-1.167h7.925l-3.087-3.087a.583.583 0 010-.825z" fill="#fff"/><defs><linearGradient id="hpaint0_linear_1058_205" x1="26.518" y1="20.278" x2="-9.639" y2="28.865" gradientUnits="userSpaceOnUse"><stop stop-color="#073CBD"/><stop offset=".516" stop-color="#08A2F7"/><stop offset="1" stop-color="#63FAFF"/></linearGradient></defs></symbol><symbol id="instagram" viewBox="0 0 18.33 18.33" xmlns="http://www.w3.org/2000/svg"><defs><style>.icls-1{fill-rule:evenodd}</style></defs><path class="icls-1" d="M5.39.06C6.37 0 6.68 0 9.17 0S12 0 12.94.06a6.79 6.79 0 012.23.42 4.39 4.39 0 011.62 1.06 4.47 4.47 0 011.06 1.62 6.82 6.82 0 01.43 2.23v7.56a6.75 6.75 0 01-.43 2.22 4.66 4.66 0 01-2.68 2.68 6.75 6.75 0 01-2.22.43H5.39a6.82 6.82 0 01-2.23-.43 4.58 4.58 0 01-1.62-1.05 4.51 4.51 0 01-1.06-1.63A6.78 6.78 0 01.06 13C0 12 0 11.66 0 9.17s0-2.81.06-3.78a6.85 6.85 0 01.42-2.23 4.47 4.47 0 011.06-1.62A4.47 4.47 0 013.16.48 6.85 6.85 0 015.39.06zm7.48 1.65c-1-.05-1.26-.06-3.7-.06s-2.74 0-3.71.06a5.23 5.23 0 00-1.7.29 2.87 2.87 0 00-1 .69 2.75 2.75 0 00-.69 1 5.23 5.23 0 00-.31 1.7c-.05 1-.06 1.26-.06 3.71s0 2.73.06 3.7A5.17 5.17 0 002 14.57a2.86 2.86 0 00.69 1.06 2.72 2.72 0 001 .68 4.9 4.9 0 001.7.32c1 0 1.26.05 3.71.05s2.73 0 3.7-.05a4.9 4.9 0 001.7-.32 2.76 2.76 0 001.06-.68 2.84 2.84 0 00.68-1.06 4.84 4.84 0 00.32-1.7c0-1 .05-1.26.05-3.7s0-2.74-.05-3.71a4.9 4.9 0 00-.32-1.7 2.72 2.72 0 00-.68-1 2.86 2.86 0 00-.99-.76 5.23 5.23 0 00-1.7-.29zM8 12a3 3 0 003.71-1.12 3 3 0 00.5-2 3 3 0 00-2-2.58 3.17 3.17 0 00-1.33-.17 3.22 3.22 0 00-1.28.42 3.3 3.3 0 00-1 .93 3.07 3.07 0 00-.48 1.25 3.14 3.14 0 00.1 1.33 3 3 0 00.66 1.17A2.93 2.93 0 008 12zM5.84 5.84a4.65 4.65 0 011.52-1 4.91 4.91 0 011.81-.36 4.69 4.69 0 013.33 1.36 4.62 4.62 0 011 1.52 4.71 4.71 0 01.36 1.81 4.63 4.63 0 01-.36 1.8 4.7 4.7 0 01-4.35 2.91 4.7 4.7 0 01-3.33-8zm9.08-.68a1.18 1.18 0 00.26-.37 1 1 0 00.09-.43 1.06 1.06 0 00-.08-.43 1 1 0 00-.19-.37 1.15 1.15 0 00-.37-.25 1.32 1.32 0 00-.44-.08 1.08 1.08 0 00-.43.1 1 1 0 00-.36.25 1.13 1.13 0 00-.31.78 1.15 1.15 0 00.33.77 1.08 1.08 0 00.77.33 1.12 1.12 0 00.73-.3z"/></symbol><symbol id="large-white-arrow" viewBox="0 0 134.42 122.89" xmlns="http://www.w3.org/2000/svg"><defs><style>.jcls-1{fill-rule:evenodd}</style></defs><path class="jcls-1" d="M132.51 56.83L130.68 55l-.32-.32L77.59 1.91a6.52 6.52 0 10-9.22 9.23l41 41H9.34a9.35 9.35 0 000 18.69h100l-41 41a6.52 6.52 0 109.25 9.17l52.73-52.73c.14-.13.27-.26.4-.4l1.79-1.79a6.52 6.52 0 000-9.25zm-2.12 7.11l-1.8 1.79-.06.07a2.23 2.23 0 01-.27.26l-.06.06-52.73 52.74a3.52 3.52 0 11-5-5l41-41a3 3 0 00-2.12-5.12H9.34a6.35 6.35 0 010-12.69h100a3 3 0 002.11-5.05l-41-41a3.52 3.52 0 115-5l52.79 52.8a2.28 2.28 0 01.22.22h.05l1.88 1.98a3.52 3.52 0 010 4.94z"/></symbol><symbol viewBox="0 0 23.03 12.25" id="long-arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M.89 5.25h19.36L17 1.44A.87.87 0 0117.15.2a.89.89 0 01.65-.2.94.94 0 01.6.32l4.42 5.25a.57.57 0 01.08.13s0 .07.07.11a.87.87 0 01.06.32.85.85 0 01-.06.31s0 .07-.07.11a1 1 0 01-.08.14l-4.42 5.25a1.19 1.19 0 01-.31.23 1 1 0 01-.38.08.89.89 0 01-.56-.2.73.73 0 01-.22-.27.75.75 0 01-.1-.32.78.78 0 010-.34.79.79 0 01.16-.3L20.25 7H.89a.88.88 0 01-.63-.26.86.86 0 010-1.23.88.88 0 01.63-.26z"/></symbol><symbol viewBox="0 0 21 21" id="mail" xmlns="http://www.w3.org/2000/svg"><path d="M17.49 5.83H3.13l7.18 6.58 7.18-6.58z"/><path d="M18.38 6.37l-7.73 7.09a.51.51 0 01-.68 0L2.24 6.37a.36.36 0 01-.07-.1V17.1a.63.63 0 00.2.47.67.67 0 00.48.2h14.92a.67.67 0 00.48-.2.63.63 0 00.2-.47V6.28z"/></symbol><symbol id="pdf" viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg"><defs><style>.mcls-1{fill:#073cbd}</style></defs><path class="mcls-1" d="M8 0a8 8 0 00-8 8v48a8 8 0 008 8h32a8 8 0 008-8V8a8 8 0 00-8-8zm0 4h32a4 4 0 014 4v48a4 4 0 01-4 4H8a4 4 0 01-4-4V8a4 4 0 014-4z"/><path class="mcls-1" d="M10.41 48.35a3.23 3.23 0 01-1.75-1.68A4.29 4.29 0 019 42.26a10.6 10.6 0 013.59-3.15 30.94 30.94 0 015.93-2.58 77.27 77.27 0 004.24-8.91A29.14 29.14 0 0121 22.44a11.19 11.19 0 01-.18-4.54 4.31 4.31 0 012.6-3.29 4.18 4.18 0 012.41-.31 2.8 2.8 0 011.12.52 2.76 2.76 0 01.79.94 4.88 4.88 0 01.5 2.15 12.68 12.68 0 01-.18 2.46A39.66 39.66 0 0126 27.54a43.3 43.3 0 003.92 6.75 22.63 22.63 0 015.33.2 6.36 6.36 0 013.84 1.86 3.38 3.38 0 01.8 2.07 4.65 4.65 0 01-.55 2.25 4.18 4.18 0 01-1.42 1.67 3.47 3.47 0 01-2 .55 6.86 6.86 0 01-3.73-1.67 23 23 0 01-3.64-3.8 47.16 47.16 0 00-8 1.62 45.68 45.68 0 01-4.08 6 10.83 10.83 0 01-3.71 3.15 3.21 3.21 0 01-2.35.16zm5.52-7.61c-.67.31-1.28.63-1.84 1a7.92 7.92 0 00-2.59 2.18 1.34 1.34 0 00-.16 1.45.55.55 0 00.11.17h.14a8.18 8.18 0 002.54-2.29q.96-1.25 1.8-2.51zm6.56-5.32c1.33-.31 2.68-.57 4-.77-.73-1.11-1.41-2.26-2-3.43q-.94 2.13-2 4.2zm9.78 1.8A16 16 0 0034 38.86a4 4 0 002 1 .45.45 0 00.28-.06 1.24 1.24 0 00.38-.5 1.91 1.91 0 00.24-.8.36.36 0 00-.11-.25 3.66 3.66 0 00-2.07-.84 14.39 14.39 0 00-2.45-.21zm-8-14a25.32 25.32 0 00.8-3.31 8.94 8.94 0 00.19-1.91 2.33 2.33 0 00-.12-.79 1.67 1.67 0 00-.58.16 1.34 1.34 0 00-.79 1.13 8.27 8.27 0 00.23 3.32 14.13 14.13 0 00.36 1.38z"/></symbol><symbol viewBox="0 0 21 21" id="phone" xmlns="http://www.w3.org/2000/svg"><path d="M7.45 10.05a6.73 6.73 0 003.14 3.14.87.87 0 00.32.06.72.72 0 00.32-.11l2-1.35a.64.64 0 01.3-.11.66.66 0 01.31.06l3.77 1.61a.68.68 0 01.31.27.62.62 0 01.08.38 3.88 3.88 0 01-3.84 3.38 11 11 0 01-10.95-11 3.87 3.87 0 011-2.55A3.92 3.92 0 016.6 2.61a.6.6 0 01.4.08.58.58 0 01.26.31l1.62 3.77a.67.67 0 010 .31.54.54 0 01-.1.3l-1.34 2a.6.6 0 00-.1.31.59.59 0 00.11.36z"/></symbol><symbol viewBox="0 0 17.23 14.46" id="slider-arrow-left" xmlns="http://www.w3.org/2000/svg"><path d="M16.23 6.23H3.41l4.53-4.52A1 1 0 106.52.29L.29 6.52a1 1 0 00-.21.32 1 1 0 00-.08.39 1 1 0 00.08.38 1 1 0 00.21.33l6.23 6.23a1 1 0 00.71.29 1 1 0 00.71-.29 1 1 0 000-1.42L3.41 8.23h12.82a1 1 0 000-2z"/></symbol><symbol viewBox="0 0 17.23 14.46" id="slider-arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M17.15 7.61a1 1 0 00.05-.24.7.7 0 000-.14.7.7 0 000-.14 1 1 0 00-.05-.24 1 1 0 00-.22-.33L10.7.29a1 1 0 00-1.41 0 1 1 0 000 1.42l4.52 4.52H1a1 1 0 000 2h12.81l-4.52 4.52a1 1 0 000 1.42 1 1 0 00.71.29 1 1 0 00.7-.29l6.23-6.23a1.06 1.06 0 00.22-.33z"/></symbol><symbol id="stars" viewBox="0 0 49 46" xmlns="http://www.w3.org/2000/svg"><defs><style>.qcls-1{fill:#073cbd;fill-rule:evenodd}</style></defs><path class="qcls-1" d="M3.61 27.93A20.87 20.87 0 010 29a20.87 20.87 0 013.61 1.07 21.77 21.77 0 0112.32 12.32A21.13 21.13 0 0117 46a21.13 21.13 0 011.07-3.61 21.77 21.77 0 0112.32-12.32A21.13 21.13 0 0134 29a21.13 21.13 0 01-3.61-1.07 21.77 21.77 0 01-12.32-12.32A21.13 21.13 0 0117 12a21.13 21.13 0 01-1.07 3.61A21.77 21.77 0 013.61 27.93zM6.14 29A23.8 23.8 0 0117 39.86 23.8 23.8 0 0127.86 29 23.8 23.8 0 0117 18.14 23.8 23.8 0 016.14 29zM38 0l-.07.38a14.23 14.23 0 01-1 3.12 14.11 14.11 0 01-6.71 6.88A14.55 14.55 0 0127 11.5a14.55 14.55 0 013.2 1.09 14.23 14.23 0 017.72 10L38 23l.07-.38a14.23 14.23 0 017.72-10A14.55 14.55 0 0149 11.5a14.55 14.55 0 01-3.2-1.09 14.11 14.11 0 01-6.71-6.88 14.23 14.23 0 01-1-3.12zm0 5.79a16.2 16.2 0 01-5.63 5.71A16.2 16.2 0 0138 17.21a16.2 16.2 0 015.63-5.71A16.2 16.2 0 0138 5.79z"/></symbol><symbol id="submit-arrow" viewBox="0 0 45.95 42.35" xmlns="http://www.w3.org/2000/svg"><defs><style>.rcls-1{fill-rule:evenodd}</style></defs><path class="rcls-1" d="M4.92 26.09a4.92 4.92 0 110-9.83h26.37l-9.37-9.37a4 4 0 115.71-5.71l16.45 16.46.13.12.56.56a4 4 0 010 5.71l-.54.53-.17.17-16.43 16.44a4 4 0 01-5.71-5.71l9.37-9.37zm31.2-2L23.33 36.87a2 2 0 102.88 2.88L42.66 23.3a1.59 1.59 0 00.13-.13l.56-.56a2 2 0 000-2.88l-.57-.57-.1-.09L26.21 2.6a2 2 0 00-2.88 2.88l12.79 12.78H4.92a2.92 2.92 0 100 5.83z"/></symbol><symbol viewBox="0 0 18.48 15.43" id="telegram" xmlns="http://www.w3.org/2000/svg"><path d="M.86 6.37L17.25.08c.75-.28 1.42.18 1.18 1.33L15.64 14.5c-.21.93-.76 1.16-1.54.72L9.85 12.1l-2 2a1.06 1.06 0 01-.85.41l.3-4.31 7.87-7.08c.35-.3-.07-.47-.53-.17L4.86 9 .67 7.72c-.91-.29-.93-.91.19-1.35z"/></symbol><symbol viewBox="0 0 27.92 23.2" id="thin-slider-arrow-left" xmlns="http://www.w3.org/2000/svg"><path d="M26.92 10.6H3.41l8.9-8.89a1 1 0 000-1.42 1 1 0 00-1.41 0L.29 10.89a1.15 1.15 0 00-.21.33 1 1 0 00-.08.38 1 1 0 00.08.4 1 1 0 00.21.32L10.9 22.91a1 1 0 00.7.29 1 1 0 00.71-.29 1 1 0 000-1.41l-8.9-8.9h23.51a1 1 0 000-2z"/></symbol><symbol viewBox="0 0 27.92 23.2" id="thin-slider-arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M27.84 12a1 1 0 00.08-.39 1 1 0 00-.3-.71L17 .29a1 1 0 00-1.41 0 1 1 0 000 1.42l8.91 8.89H1a1 1 0 000 2h23.5l-8.89 8.9a1 1 0 000 1.41 1 1 0 001.41 0l10.6-10.6a.87.87 0 00.22-.31z"/></symbol></svg>    </div>
 
     <div class="page-content">
         <header class="page-header">
             <div class="container">
                 <div class="page-header__row">
-                    <div class="page-header__col">
-                        <a href="#" class="page-header__logo">
-                            <img src="img/logo.svg" alt="" class="page-header__logo-image">
-                        </a>
-                    </div>
-                    <div class="page-header__col">
-                        <a href="tel:+79876543210" class="page-header__phone">
         
-                            8 987 654 32 10
+                    <a href="#" class="page-header__logo">
+                       
+                        <picture>
+                            <source srcset="img/mobile-logo.svg" media="(max-width: 640px)">
+                            <img src="img/logo.svg" alt="Logo" class="page-header__logo-image">
+                        </picture>
+                    </a>
+                    <div class="page-header__languages">
+                        <a href="#" class="page-header__languages-link active">
+                            РУС
                         </a>
-                        <div class="page-header__languages">
-                            <a href="#" class="page-header__languages-link active">
-                                РУС
-                            </a>
-                            <a href="#" class="page-header__languages-link">
-                                ENG
-                            </a>
-                        </div>
+                        <a href="#" class="page-header__languages-link">
+                            ENG
+                        </a>
                     </div>
+        
+        
+                    <nav class="page-header__nav">
+                        <ul class="page-header__nav-list">
+                            <li class="page-header__nav-list-item">
+                                <a href="#" class="page-header__nav-link">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="page-header__nav-list-item">
+                                <a href="#" class="page-header__nav-link">
+                                    услуги
+                                </a>
+                            </li>
+                            <li class="page-header__nav-list-item">
+                                <a href="#" class="page-header__nav-link">
+                                    портфолио
+                                </a>
+                            </li>
+                            <li class="page-header__nav-list-item">
+                                <a href="#" class="page-header__nav-link">
+                                    контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="tel:+79876543210" class="page-header__phone">
+                        8 987 654 32 10
+                    </a>
+                    <div class="page-header__menu">
+                        <nav class="page-header__menu-nav">
+                            <ul class="page-header__menu-nav-list">
+                                <li class="page-header__menu-nav-list-item">
+                                    <a href="#" class="page-header__menu-nav-link">
+                                        Главная
+                                    </a>
+                                </li>
+                                <li class="page-header__menu-nav-list-item">
+                                    <a href="#" class="page-header__menu-nav-link">
+                                        услуги
+                                    </a>
+                                </li>
+                                <li class="page-header__menu-nav-list-item">
+                                    <a href="#" class="page-header__menu-nav-link">
+                                        портфолио
+                                    </a>
+                                </li>
+                                <li class="page-header__menu-nav-list-item">
+                                    <a href="#" class="page-header__menu-nav-link">
+                                        контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ul class="page-header__menu-contacts-list">
+                            <li class="page-header__menu-contacts-list-item">
+                                <a href="#" class="page-header__menu-contacts-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                        <use xlink:href="#instagram"></use>
+                                    </svg>
+                                    @aquilamedia_ru
+                                </a>
+                            </li>
+                            <li class="page-header__menu-contacts-list-item">
+                                <a href="#" class="page-header__menu-contacts-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-telegram">
+                                        <use xlink:href="#telegram"></use>
+                                    </svg>
+                                    телеграм студии
+                                </a>
+                            </li>
+                            <li class="page-header__menu-contacts-list-item">
+                                <a href="tel:+79876543210" class="page-header__menu-contacts-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-phone">
+                                        <use xlink:href="#phone"></use>
+                                    </svg>
+                                    8 987 654 32 10
+                                </a>
+                            </li>
+                            <li class="page-header__menu-contacts-list-item">
+                                <a href="mailto:aquilasoft@gmail.com" class="page-header__menu-contacts-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-mail">
+                                        <use xlink:href="#mail"></use>
+                                    </svg>
+                                    aquilasoft@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <burger class="page-header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </burger>
+        
+        
         
                 </div>
             </div>
@@ -138,377 +231,254 @@
 
 <section class="about" id="about">
     <div class="container">
-        <div class="about__row">
-            <div class="about__sidebar">
-                <div class="page-nav js-sections-menu">
-                    <a href="#to-about" class="page-nav__link js-sections-menu-link ">
-                        Об агентстве
-                    </a>
-                    <a href="#to-cases" class="page-nav__link js-sections-menu-link">
-                        Кейсы
-                    </a>
-                    <a href="#to-services" class="page-nav__link js-sections-menu-link">
-                        Услуги
-                    </a>
-                    <a href="#to-community" class="page-nav__link js-sections-menu-link">
-                        Блог
-                    </a>
-                    <a href="#to-collaboration" class="page-nav__link js-sections-menu-link">
-                        Сотрудничество
-                    </a>
-                    <a href="#to-specialists" class="page-nav__link js-sections-menu-link">
-                        Команда
-                    </a>
-                    <a href="#to-contacts" class="page-nav__link js-sections-menu-link">
-                        Контакты
-                    </a>
+        <div class="about__main">
+            <div class="about__inner-row">
+                <img src="img/about-illustration.svg" alt="" class="about__illustration">
+                <div class="about__text-content">
+                    <h2 class="about__heading">
+                        Об агенстве
+                    </h2>
+                    <div class="about__heading-text">
+                        <p>
+                            В своей работе используем научный подход
+                        </p>
+                    </div>
+                    <div class="about__text">
+                        <p>
+                            Профессионально реализовываем perfomance-маркетинг, опираясьна ключевые показатели
+                            вашего бизнеса
+                        </p>
+                        <p>
+                            Внедряем сквозную аналитику и работаем над всеми этапами воронки продаж
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="about__main">
-                <div class="about__inner-row">
-                    <img src="img/about-illustration.svg" alt="" class="about__illustration">
-                    <div class="about__text-content">
-                        <h2 class="about__heading">
-                            Об агенстве
-                        </h2>
-                        <div class="about__heading-text">
-                            <p>
-                                В своей работе используем научный подход
-                            </p>
-                        </div>
-                        <div class="about__text">
-                            <p>
-                                Профессионально реализовываем perfomance-маркетинг, опираясьна ключевые показатели
-                                вашего бизнеса
-                            </p>
-                            <p>
-                                Внедряем сквозную аналитику и работаем над всеми этапами воронки продаж
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about__achievements">
-                    <ul class="about__achievements-list">
-                        <li class="about__achievements-list-item">
-                            <div class="about__achievements-card">
-                                <div class="about__achievements-card-number">
-                                    С 2014 года
-                                </div>
-                                <div class="about__achievements-card-content">
-                                    <div class="about__achievements-card-text">
-                                        <p>
-                                            помогаем расти бизнесу
-                                        </p>
-                                    </div>
-                                    <img src="img/achievements/1.svg" alt="" class="about__achievements-card-icon">
-                                </div>
-
+            <div class="about__achievements">
+                <ul class="about__achievements-list">
+                    <li class="about__achievements-list-item">
+                        <a href="#" class="about__achievements-card">
+                            <div class="about__achievements-card-number">
+                                С 2014 года
                             </div>
-                        </li>
-                        <li class="about__achievements-list-item">
-                            <div class="about__achievements-card">
-                                <div class="about__achievements-card-number">
-                                    209 проектов
+                            <div class="about__achievements-card-content">
+                                <div class="about__achievements-card-text">
+                                    <p>
+                                        помогаем расти бизнесу
+                                    </p>
                                 </div>
-                                <div class="about__achievements-card-content">
-                                    <div class="about__achievements-card-text">
-                                        <p>
-                                            за 2020 год
-                                        </p>
-                                    </div>
-                                    <img src="img/achievements/2.svg" alt="" class="about__achievements-card-icon">
-                                </div>
-
-                            </div>
-                        </li>
-                        <li class="about__achievements-list-item">
-                            <div class="about__achievements-card">
-                                <div class="about__achievements-card-number">
-                                    5 специалистов
-                                </div>
-                                <div class="about__achievements-card-content">
-                                    <div class="about__achievements-card-text">
-                                        <p>
-                                            в среднем работает над каждым проектом
-                                        </p>
-                                    </div>
-                                    <img src="img/achievements/3.svg" alt="" class="about__achievements-card-icon">
-                                </div>
-
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-<section class="cases js-cases" id="cases">
-    <div class="container">
-        <div class="cases__content">
-            <div class="cases__top-row">
-                <h2 class="cases__heading">
-                    Кейсы
-                </h2>
-                <div class="cases__count">
-                    300 проектов
-                </div>
-            </div>
-
-            <div class="cases__row">
-                <div class="cases__col">
-                    <div class="cases__item">
-                        <a href="#case-modal" class="cases__card js-open-modal">
-                            <div class="cases__card-image-container">
-                                <img src="img/cases/1.jpg" alt="" class="cases__card-image">
-                                <div class="cases__card-overlay">
-                                    <svg width="14" height="14" aria-hidden="true" class="icon-eye">
-                                        <use xlink:href="#eye"></use>
-                                    </svg>
+                                <div class="about__achievements-card-watch-text">
                                     Смотреть
                                 </div>
-                            </div>
-                            <h4 class="cases__card-title">
-                                Название кейса
-                            </h4>
-                        </a>
-                    </div>
-                    <div class="cases__item">
-                        <a href="#case-modal" class="cases__card js-open-modal">
-                            <div class="cases__card-image-container">
-                                <img src="img/cases/4.jpg" alt="" class="cases__card-image">
-                                <div class="cases__card-overlay">
-                                    <svg width="14" height="14" aria-hidden="true" class="icon-eye">
-                                        <use xlink:href="#eye"></use>
-                                    </svg>
-                                    Смотреть
-                                </div>
-                            </div>
-                            <h4 class="cases__card-title">
-                                Название кейса
-                            </h4>
-                        </a>
-                    </div>
-                    <div class="cases__item">
-                        <a href="#" class="cases__card cases__card--custom">
-                            <div class="cases__card-image-container">
-                                <img src="img/cases/gradient-bg.svg" alt="" class="cases__card-image">
-                                <div class="cases__card-content">
-                                    <h4 class="cases__card-inner-title">
-                                        Собственные проекты
-                                    </h4>
-                                    <div class="cases__card-inner-text">
-                                        Смотреть
-                                    </div>
-                                </div>
-
+                                <img src="img/achievements/1.svg" alt="" class="about__achievements-card-icon">
                             </div>
 
-                        </a>
-                    </div>
-
-                </div>
-                <div class="cases__col">
-                    <div class="cases__item">
-                        <a href="#case-modal" class="cases__card js-open-modal">
-                            <div class="cases__card-image-container">
-                                <img src="img/cases/2.jpg" alt="" class="cases__card-image">
-                                <div class="cases__card-overlay">
-                                    <svg width="14" height="14" aria-hidden="true" class="icon-eye">
-                                        <use xlink:href="#eye"></use>
-                                    </svg>
-                                    Смотреть
-                                </div>
-                            </div>
-                            <h4 class="cases__card-title">
-                                Название кейса
-                            </h4>
-                        </a>
-                    </div>
-                    <div class="cases__item">
-                        <a href="#case-modal" class="cases__card js-open-modal">
-                            <div class="cases__card-image-container">
-                                <img src="img/cases/5.jpg" alt="" class="cases__card-image">
-                                <div class="cases__card-overlay">
-                                    <svg width="14" height="14" aria-hidden="true" class="icon-eye">
-                                        <use xlink:href="#eye"></use>
-                                    </svg>
-                                    Смотреть
-                                </div>
-                            </div>
-                            <h4 class="cases__card-title">
-                                Название кейса
-                            </h4>
-                        </a>
-                    </div>
-                    <div class="cases__item">
-                        <a href="#case-modal" class="cases__card js-open-modal">
-                            <div class="cases__card-image-container">
-                                <img src="img/cases/7.jpg" alt="" class="cases__card-image">
-                                <div class="cases__card-overlay">
-                                    <svg width="14" height="14" aria-hidden="true" class="icon-eye">
-                                        <use xlink:href="#eye"></use>
-                                    </svg>
-                                    Смотреть
-                                </div>
-                            </div>
-                            <h4 class="cases__card-title">
-                                Название кейса
-                            </h4>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="cases__col">
-                    <div class="cases__item">
-                        <a href="#case-modal" class="cases__card js-open-modal">
-                            <div class="cases__card-image-container">
-                                <img src="img/cases/3.jpg" alt="" class="cases__card-image">
-                                <div class="cases__card-overlay">
-                                    <svg width="14" height="14" aria-hidden="true" class="icon-eye">
-                                        <use xlink:href="#eye"></use>
-                                    </svg>
-                                    Смотреть
-                                </div>
-                            </div>
-                            <h4 class="cases__card-title">
-                                Название кейса
-                            </h4>
-                        </a>
-                    </div>
-
-                    <div class="cases__item">
-                        <a href="#case-modal" class="cases__card js-open-modal">
-                            <div class="cases__card-image-container">
-                                <img src="img/cases/6.jpg" alt="" class="cases__card-image">
-                                <div class="cases__card-overlay">
-                                    <svg width="14" height="14" aria-hidden="true" class="icon-eye">
-                                        <use xlink:href="#eye"></use>
-                                    </svg>
-                                    Смотреть
-                                </div>
-                            </div>
-                            <h4 class="cases__card-title">
-                                Название кейса
-                            </h4>
-                        </a>
-                    </div>
-                    <div class="cases__item">
-                        <a href="#case-modal" class="cases__card js-open-modal">
-                            <div class="cases__card-image-container">
-                                <img src="img/cases/9.jpg" alt="" class="cases__card-image">
-                                <div class="cases__card-overlay">
-                                    <svg width="14" height="14" aria-hidden="true" class="icon-eye">
-                                        <use xlink:href="#eye"></use>
-                                    </svg>
-                                    Смотреть
-                                </div>
-                            </div>
-                            <h4 class="cases__card-title">
-                                Название кейса
-                            </h4>
-                        </a>
-                    </div>
-                    <div class="cases__item">
-                        <a href="#case-modal" class="cases__card js-open-modal">
-                            <div class="cases__card-image-container">
-                                <img src="img/cases/8.jpg" alt="" class="cases__card-image">
-                                <div class="cases__card-overlay">
-                                    <svg width="14" height="14" aria-hidden="true" class="icon-eye">
-                                        <use xlink:href="#eye"></use>
-                                    </svg>
-                                    Смотреть
-                                </div>
-                            </div>
-                            <h4 class="cases__card-title">
-                                Название кейса
-                            </h4>
-                        </a>
-                    </div>
-
-
-                </div>
-            </div>
-            <a href="#" class="cases__all-link">
-                Изучить больше проектов
-            </a>
-
-
-
-        </div>
-    </div>
-</section>
-
-<section class="services js-services" id="services">
-    <div class="container">
-        <div class="services__content">
-            <h2 class="services__heading">
-                Услуги
-            </h2>
-            <div class="services__grid">
-                <div class="services__text">
-                    <p>
-                        Используем экспертизу и&nbsp;технологии в&nbsp;решении задач вашего бизнеса. Анализируем каждый
-                        этап
-                        воронки и&nbsp;применяем нестандартные решения.
-                    </p>
-                </div>
-                <ul class="services__list">
-                    <li class="services__list-item">
-                        <a href="#" class="services__card">
-                            <img src="img/services/1.svg" alt="" class="services__card-icon">
-                            <h4 class="services__card-title">
-                                Аудит и аналитика
-                            </h4>
                         </a>
                     </li>
-                    <li class="services__list-item">
-                        <a href="#" class="services__card">
-                            <img src="img/services/2.svg" alt="" class="services__card-icon">
-                            <h4 class="services__card-title">
-                                Разработка SMM стратегий и ведение соц.сетей
-                            </h4>
+                    <li class="about__achievements-list-item">
+                        <a href="#" class="about__achievements-card">
+                            <div class="about__achievements-card-number">
+                                209 проектов
+                            </div>
+                            <div class="about__achievements-card-content">
+                                <div class="about__achievements-card-text">
+                                    <p>
+                                        за 2020 год
+                                    </p>
+                                </div>
+                                <div class="about__achievements-card-watch-text">
+                                    Смотреть
+                                </div>
+                                <img src="img/achievements/2.svg" alt="" class="about__achievements-card-icon">
+                            </div>
+
                         </a>
                     </li>
-                    <li class="services__list-item">
-                        <a href="#" class="services__card">
-                            <img src="img/services/3.svg" alt="" class="services__card-icon">
-                            <h4 class="services__card-title">
-                                Аудит и построение отделов продаж
-                            </h4>
-                        </a>
-                    </li>
-                    <li class="services__list-item">
-                        <a href="#" class="services__card">
-                            <img src="img/services/4.svg" alt="" class="services__card-icon">
-                            <h4 class="services__card-title">
-                                Таргетированная реклама
-                            </h4>
-                        </a>
-                    </li>
-                    <li class="services__list-item">
-                        <a href="#" class="services__card">
-                            <img src="img/services/5.svg" alt="" class="services__card-icon">
-                            <h4 class="services__card-title">
-                                Контекстная реклама Google & Yandex
-                            </h4>
-                        </a>
-                    </li>
-                    <li class="services__list-item">
-                        <a href="#" class="services__card">
-                            <img src="img/services/6.svg" alt="" class="services__card-icon">
-                            <h4 class="services__card-title">
-                                Веб-разработка и&nbsp;мобильные приложения
-                            </h4>
+                    <li class="about__achievements-list-item">
+                        <a href="#" class="about__achievements-card">
+                            <div class="about__achievements-card-number">
+                                5 специалистов
+                            </div>
+                            <div class="about__achievements-card-content">
+                                <div class="about__achievements-card-text">
+                                    <p>
+                                        в среднем работает над каждым проектом
+                                    </p>
+                                </div>
+                                <div class="about__achievements-card-watch-text">
+                                    Смотреть
+                                </div>
+                                <img src="img/achievements/3.svg" alt="" class="about__achievements-card-icon">
+                            </div>
+
                         </a>
                     </li>
                 </ul>
             </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="cases">
+    <div class="container">
+        <div class="cases__content">
+
+
+            <h2 class="cases__heading">
+                Кейсы
+            </h2>
+            <ul class="cases__list">
+                <li class="cases__list-item">
+                    <a href="#" class="cases__card">
+                        <img src="img/cases-2/1.webp" alt="" class="cases__card-image">
+                        <h3 class="cases__card-title">
+                            АО Авиакомпания «АЛРОСА»
+                        </h3>
+                        <div class="cases__card-category">
+                            CEO
+                        </div>
+                    </a>
+                </li>
+                <li class="cases__list-item">
+                    <a href="#" class="cases__card">
+                        <img src="img/cases-2/2.webp" alt="" class="cases__card-image">
+                        <h3 class="cases__card-title">
+                            Завод по производству микрофибры «Бикотекс»
+                        </h3>
+                        <div class="cases__card-category">
+                            Веб-разработка
+                        </div>
+                    </a>
+                </li>
+                <li class="cases__list-item">
+                    <a href="#" class="cases__card">
+                        <img src="img/cases-2/3.webp" alt="" class="cases__card-image">
+                        <h3 class="cases__card-title">
+                            Онлайн-школа веб-дизайна Максима Солдаткина
+                        </h3>
+                        <div class="cases__card-category">
+                            Веб-разработка
+                        </div>
+                    </a>
+                </li>
+
+
+                <li class="cases__list-item">
+                    <a href="#" class="cases__card">
+                        <img src="img/cases-2/4.webp" alt="" class="cases__card-image">
+                        <h3 class="cases__card-title">
+                            Магазин одежды «Святая»
+                        </h3>
+                        <div class="cases__card-category">
+                            Веб-разработка
+                        </div>
+                    </a>
+                </li>
+                <li class="cases__list-item">
+                    <a href="#" class="cases__card">
+                        <img src="img/cases-2/5.webp" alt="" class="cases__card-image">
+                        <h3 class="cases__card-title">
+                            Денежная помощь «Money Help»
+                        </h3>
+                        <div class="cases__card-category">
+                            CEO
+                        </div>
+                    </a>
+                </li>
+                <li class="cases__list-item">
+                    <a href="#" class="cases__card cases__card--white">
+                        <img src="img/cases-2/portfolio.webp" alt="" class="cases__card-image cases__card-image--cover">
+                        <h3 class="cases__card-title">
+                            Более 100 проектов
+                        </h3>
+                        <div class="cases__card-portfolio">
+                            Перейти в портфолио
+                            <svg width="14" height="14" aria-hidden="true" class="icon-slider-arrow-right">
+                                <use xlink:href="#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="services js-services" id="services">
+    <div class="container">
+        <div class="services__content">
+            <div class="services__top-row">
+                <div class="services__col">
+                    <h2 class="services__heading">
+                        Услуги
+                    </h2>
+                    <div class="services__heading-text">
+                        <p>
+                            В&nbsp;море &laquo;лучших на&nbsp;рынке&raquo; не&nbsp;хватает надёжных. Мы&nbsp;&mdash; как
+                            раз из&nbsp;таких.
+                        </p>
+                    </div>
+                    <a href="#" class="services__link">
+                        Узнать больше
+                        <svg width="14" height="14" aria-hidden="true" class="icon-gradient-arrow">
+                            <use xlink:href="#gradient-arrow"></use>
+                        </svg>
+                    </a>
+
+                    <img src="img/services-arrow.svg" alt="" class="services__arrow">
+                </div>
+                <div class="services__col">
+                    <ul class="services__list">
+                        <li class="services__list-item">
+                            <a href="#" class="services__card">
+                                <img src="img/services-icons/1.svg" alt="" class="services__card-icon">
+                                Аудит и аналитика
+                            </a>
+                        </li>
+                        <li class="services__list-item">
+                            <a href="#" class="services__card">
+                                <img src="img/services-icons/2.svg" alt="" class="services__card-icon">
+                                Таргетированная реклама
+                            </a>
+                        </li>
+                        <li class="services__list-item">
+                            <a href="#" class="services__card">
+                                <img src="img/services-icons/3.svg" alt="" class="services__card-icon">
+                                Контекстная реклама Google & Yandex
+                            </a>
+                        </li>
+                        <li class="services__list-item">
+                            <a href="#" class="services__card">
+                                <img src="img/services-icons/4.svg" alt="" class="services__card-icon">
+                                SEO
+                            </a>
+                        </li>
+                        <li class="services__list-item">
+                            <a href="#" class="services__card">
+                                <img src="img/services-icons/5.svg" alt="" class="services__card-icon">
+                                Разработка SMM стратегийи ведение соц.сетей
+                            </a>
+                        </li>
+                        <li class="services__list-item">
+                            <a href="#" class="services__card">
+                                <img src="img/services-icons/6.svg" alt="" class="services__card-icon">
+                                Аудит и построение отделов продаж
+                            </a>
+                        </li>
+                        <li class="services__list-item">
+                            <a href="#" class="services__card">
+                                <img src="img/services-icons/7.svg" alt="" class="services__card-icon">
+                                Веб-разработка и мобильные приложения
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
             <div class="services__where-to-start">
                 <div class="services__where-to-start-content">
                     <h4 class="services__where-to-start-title">
@@ -538,223 +508,62 @@
     </div>
 </section>
 
-<section class="community js-community" id="community">
+<section class="fresh">
     <div class="container">
-        <div class="community__content">
-
-
-            <h2 class="community__heading">
-                Комьюнити Aquila.media
+        <div class="fresh__content">
+            <h2 class="fresh__heading">
+                Свежие материалы
             </h2>
-            <div class="community__row">
-
-                <div class="community__main">
-                    <div class="community__main-block">
-                        <div class="community__main-block-top">
-                            <h3 class="community__main-block-heading">
-                                Мероприятия
-                            </h3>
+            <div class="fresh__row">
+                <div class="fresh__col">
+                    <a href="#" class="fresh__large-card">
+                        <div class="fresh__large-card-image-container">
+                            <img src="img/fresh-large.webp" alt="" class="fresh__large-card-image">
                         </div>
-                        <ul class="community__list">
-                            <li class="community__list-item">
-                                <a href="#event-modal" class="community__card js-open-modal">
-                                    <div class="community__card-image-container">
-                                        <img data-src="img/community/1.jpg" alt=""
-                                            class="community__card-image lazyload">
-                                        <div class="community__card-date">
-                                            05/08
-                                        </div>
-                                    </div>
-                                    <h4 class="community__card-title">
-                                        Название какой-то клевой вечеринки и&nbsp;фото счастливых людей
-                                    </h4>
-                                </a>
-                            </li>
-                            <li class="community__list-item">
-                                <a href="#event-modal" class="community__card js-open-modal">
-                                    <div class="community__card-image-container">
-                                        <img data-src="img/community/2.jpg" alt=""
-                                            class="community__card-image lazyload">
-                                        <div class="community__card-date">
-                                            17/09
-                                        </div>
-                                    </div>
-                                    <h4 class="community__card-title">
-                                        Название какой-то клевой вечеринки
-                                    </h4>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="community__main-block">
-                        <div class="community__main-block-top">
-                            <h3 class="community__main-block-heading">
-                                Партнерские материалы
-                            </h3>
+                        <h3 class="fresh__large-card-title">
+                            Конфиденциальность данных - “попадос” для маркетологов. Но почему это хорошо?
+                        </h3>
+                    </a>
+                </div>
+                <div class="fresh__col">
+                    <a href="#" class="fresh__small-card">
+                        <div class="fresh__small-card-image-container">
+                            <img src="img/fresh-small.webp" alt="" class="fresh__small-card-image">
                         </div>
-                        <ul class="community__list">
-                            <li class="community__list-item">
-                                <a href="#event-modal" class="community__card js-open-modal">
-                                    <div class="community__card-image-container">
-                                        <img data-src="img/community/3.jpg" alt=""
-                                            class="community__card-image lazyload">
-                                        <div class="community__card-date">
-                                            продажи
-                                        </div>
-                                    </div>
-                                    <h4 class="community__card-title">
-                                        Название какого-то крутого материала от партнеров
-                                    </h4>
+                        <h3 class="fresh__small-card-title">
+                            Как правильно разработать свой сайт, чтобы повысить конверсию в продажи
+                        </h3>
+                    </a>
+                    <div class="fresh__social">
+                        <h3 class="fresh__social-heading">
+                            Следи за новыми полезностями
+                        </h3>
+                        <ul class="fresh__social-list">
+                            <li class="fresh__social-list-item">
+                                <a href="#" class="fresh__social-link">
+                                    <img src="img/fresh/vk.svg" alt="" class="fresh__social-link-icon">
+                                    Vk
                                 </a>
                             </li>
-                            <li class="community__list-item">
-                                <a href="#event-modal" class="community__card js-open-modal">
-                                    <div class="community__card-image-container">
-                                        <img data-src="img/community/4.jpg" alt=""
-                                            class="community__card-image lazyload">
-                                        <div class="community__card-date">
-                                            финансы
-                                        </div>
-                                    </div>
-                                    <h4 class="community__card-title">
-                                        Название какого-то крутого материала от партнеров
-                                    </h4>
+                            <li class="fresh__social-list-item">
+                                <a href="#" class="fresh__social-link">
+                                    <img src="img/fresh/dzen.svg" alt="" class="fresh__social-link-icon">
+                                    Яндекс<br> Дзен
+                                </a>
+                            </li>
+                            <li class="fresh__social-list-item">
+                                <a href="#" class="fresh__social-link">
+                                    <img src="img/fresh/telegram.svg" alt="" class="fresh__social-link-icon">
+                                    Telegram
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="community__aside">
-                    <h3 class="community__other-heading">
-                        Полезные материалы
-                    </h3>
-                    <div class="community__other">
-
-
-
-
-                        <ul class="community__other-list">
-                            <li class="community__other-list-item">
-                                <a href="#" class="community__other-card">
-                                    <div class="community__other-card-image-container">
-                                        <img src="img/community/other/1.jpg" alt="" class="community__other-card-image">
-                                    </div>
-                                    <div class="community__other-card-content">
-                                        <h4 class="community__other-card-title">
-                                            Название полезной статьи, возможно в&nbsp;две строки
-                                        </h4>
-                                        <div class="community__other-card-date">
-                                            12 марта 2021
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="community__other-list-item">
-                                <a href="#" class="community__other-card">
-                                    <div class="community__other-card-image-container">
-                                        <img src="img/community/other/2.jpg" alt="" class="community__other-card-image">
-                                    </div>
-                                    <div class="community__other-card-content">
-                                        <h4 class="community__other-card-title">
-                                            Название полезной статьи, возможно в&nbsp;две или в три строки
-                                        </h4>
-                                        <div class="community__other-card-date">
-                                            12 марта 2021
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="community__other-list-item">
-                                <a href="#" class="community__other-card">
-                                    <div class="community__other-card-image-container">
-                                        <img src="img/community/other/3.jpg" alt="" class="community__other-card-image">
-                                    </div>
-                                    <div class="community__other-card-content">
-                                        <h4 class="community__other-card-title">
-                                            Классная статья с&nbsp;небольшим заголовком
-                                        </h4>
-                                        <div class="community__other-card-date">
-                                            12 марта 2021
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="community__other-list-item">
-                                <a href="#" class="community__other-card">
-                                    <div class="community__other-card-image-container">
-                                        <img src="img/community/other/4.jpg" alt="" class="community__other-card-image">
-                                    </div>
-                                    <div class="community__other-card-content">
-                                        <h4 class="community__other-card-title">
-                                            Название полезной статьи, возможно в две строки
-                                        </h4>
-                                        <div class="community__other-card-date">
-                                            12 марта 2021
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="community__other-list-item">
-                                <a href="#" class="community__other-card">
-                                    <div class="community__other-card-image-container">
-                                        <img src="img/community/other/5.jpg" alt="" class="community__other-card-image">
-                                    </div>
-                                    <div class="community__other-card-content">
-                                        <h4 class="community__other-card-title">
-                                            Название полезной статьи, возможно в две или в три строки
-                                        </h4>
-                                        <div class="community__other-card-date">
-                                            12 марта 2021
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="community__other-list-item">
-                                <a href="#" class="community__other-card">
-                                    <div class="community__other-card-image-container">
-                                        <img src="img/community/other/6.jpg" alt="" class="community__other-card-image">
-                                    </div>
-                                    <div class="community__other-card-content">
-                                        <h4 class="community__other-card-title">
-                                            Название полезной статьи, возможно в две или в три строки
-                                        </h4>
-                                        <div class="community__other-card-date">
-                                            12 марта 2021
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="community__other-list-item">
-                                <a href="#" class="community__other-card">
-                                    <div class="community__other-card-image-container">
-                                        <img src="img/community/other/7.jpg" alt="" class="community__other-card-image">
-                                    </div>
-                                    <div class="community__other-card-content">
-                                        <h4 class="community__other-card-title">
-                                            Название полезной статьи, возможно в две строки
-                                        </h4>
-                                        <div class="community__other-card-date">
-                                            12 марта 2021
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                        <a href="#" class="community__other-more-link">
-                            Смотреть все статьи
-                            <svg width="14" height="14" aria-hidden="true" class="icon-long-arrow-right">
-                                <use xlink:href="#long-arrow-right"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
 </section>
-
 
 <section class="contact-us" id="contact-us">
     <div class="container">
@@ -830,10 +639,10 @@
             </div>
             <div class="contact-us__col">
                 <a href="#" class="contact-us__channel-link">
-                    <img src="img/telegram.svg" alt="" class="contact-us__channel-link-icon">
+                    <img src="img/instagram.svg" alt="" class="contact-us__channel-link-icon">
                     <div class="contact-us__channel-link-content">
                         <h4 class="contact-us__channel-link-name">
-                            @Aquilasoft
+                            @aquilamedia_ru
                         </h4>
                         <div class="contact-us__channel-link-subscribers">
                             500K подписчиков
@@ -910,313 +719,7 @@
     </div>
 </section>
 
-<section class="specialists js-specialists" id="specialists">
-    <div class="container">
-        <div class="specialists__top-row">
-            <h2 class="specialists__heading">
-                В нашей команде классные специалисты
-            </h2>
-            <div class="specialists__arrows">
-                <button class="specialists__arrow specialists__arrow--prev" type="button">
-                    <svg width="14" height="14" aria-hidden="true" class="icon-slider-arrow-left">
-                        <use xlink:href="#slider-arrow-left"></use>
-                    </svg>
-                </button>
-                <button class="specialists__arrow specialists__arrow--next" type="button">
-                    <svg width="14" height="14" aria-hidden="true" class="icon-slider-arrow-right">
-                        <use xlink:href="#slider-arrow-right"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div class="specialists__slider">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="#" class="specialists__slider-card">
-                            <div class="specialists__slider-card-backplate">
-                                <div class="specialists__slider-card-info">
-                                    <div class="specialists__slider-card-info-skills">
-                                        <h4 class="specialists__slider-card-info-skills-heading">
-                                            Навыки
-                                        </h4>
-                                        <div class="specialists__slider-card-info-skills-text">
-                                            <p>
-                                                Отлично понимает клиентов, находит общий язык, быстро решает катастрофы
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="specialists__slider-card-info-instagram">
-                                        <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
-                                            <use xlink:href="#instagram"></use>
-                                        </svg>
-                                        petr_petrovich
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="specialists__slider-card-inner">
-                                <div class="specialists__slider-card-image-container">
-                                    <img src="img/specialists/1.jpg" alt="" class="specialists__slider-card-image">
-                                </div>
-                                <h4 class="specialists__slider-card-title">
-                                    Денис Кузин
-                                </h4>
-                                <div class="specialists__slider-card-role">
-                                    Руководитель Aquila.media
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="specialists__slider-card">
-                            <div class="specialists__slider-card-backplate">
-                                <div class="specialists__slider-card-info">
-                                    <div class="specialists__slider-card-info-skills">
-                                        <h4 class="specialists__slider-card-info-skills-heading">
-                                            Навыки
-                                        </h4>
-                                        <div class="specialists__slider-card-info-skills-text">
-                                            <p>
-                                                Отлично понимает клиентов, находит общий язык, быстро решает катастрофы
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="specialists__slider-card-info-instagram">
-                                        <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
-                                            <use xlink:href="#instagram"></use>
-                                        </svg>
-                                        petr_petrovich
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="specialists__slider-card-inner">
-                                <div class="specialists__slider-card-image-container">
-                                    <img src="img/specialists/2.jpg" alt="" class="specialists__slider-card-image">
-                                </div>
-                                <h4 class="specialists__slider-card-title">
-                                    Бэлла Виталевна
-                                </h4>
-                                <div class="specialists__slider-card-role">
-                                    SMM специалист
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="specialists__slider-card">
-                            <div class="specialists__slider-card-backplate">
-                                <div class="specialists__slider-card-info">
-                                    <div class="specialists__slider-card-info-skills">
-                                        <h4 class="specialists__slider-card-info-skills-heading">
-                                            Навыки
-                                        </h4>
-                                        <div class="specialists__slider-card-info-skills-text">
-                                            <p>
-                                                Отлично понимает клиентов, находит общий язык, быстро решает катастрофы
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="specialists__slider-card-info-instagram">
-                                        <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
-                                            <use xlink:href="#instagram"></use>
-                                        </svg>
-                                        petr_petrovich
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="specialists__slider-card-inner">
-                                <div class="specialists__slider-card-image-container">
-                                    <img src="img/specialists/3.jpg" alt="" class="specialists__slider-card-image">
-                                </div>
-                                <h4 class="specialists__slider-card-title">
-                                    Анастасия Якушева
-                                </h4>
-                                <div class="specialists__slider-card-role">
-                                    SMM специалист
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="specialists__slider-card">
-                            <div class="specialists__slider-card-backplate">
-                                <div class="specialists__slider-card-info">
-                                    <div class="specialists__slider-card-info-skills">
-                                        <h4 class="specialists__slider-card-info-skills-heading">
-                                            Навыки
-                                        </h4>
-                                        <div class="specialists__slider-card-info-skills-text">
-                                            <p>
-                                                Отлично понимает клиентов, находит общий язык, быстро решает катастрофы
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="specialists__slider-card-info-instagram">
-                                        <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
-                                            <use xlink:href="#instagram"></use>
-                                        </svg>
-                                        petr_petrovich
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="specialists__slider-card-inner">
-                                <div class="specialists__slider-card-image-container">
-                                    <img src="img/specialists/4.jpg" alt="" class="specialists__slider-card-image">
-                                </div>
-                                <h4 class="specialists__slider-card-title">
-                                    Константин Константинович
-                                </h4>
-                                <div class="specialists__slider-card-role">
-                                    Разработчик
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="specialists__slider-card">
-                            <div class="specialists__slider-card-backplate">
-                                <div class="specialists__slider-card-info">
-                                    <div class="specialists__slider-card-info-skills">
-                                        <h4 class="specialists__slider-card-info-skills-heading">
-                                            Навыки
-                                        </h4>
-                                        <div class="specialists__slider-card-info-skills-text">
-                                            <p>
-                                                Отлично понимает клиентов, находит общий язык, быстро решает катастрофы
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="specialists__slider-card-info-instagram">
-                                        <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
-                                            <use xlink:href="#instagram"></use>
-                                        </svg>
-                                        petr_petrovich
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="specialists__slider-card-inner">
-                                <div class="specialists__slider-card-image-container">
-                                    <img src="img/specialists/1.jpg" alt="" class="specialists__slider-card-image">
-                                </div>
-                                <h4 class="specialists__slider-card-title">
-                                    Денис Кузин
-                                </h4>
-                                <div class="specialists__slider-card-role">
-                                    Руководитель Aquila.media
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="specialists__slider-card">
-                            <div class="specialists__slider-card-backplate">
-                                <div class="specialists__slider-card-info">
-                                    <div class="specialists__slider-card-info-skills">
-                                        <h4 class="specialists__slider-card-info-skills-heading">
-                                            Навыки
-                                        </h4>
-                                        <div class="specialists__slider-card-info-skills-text">
-                                            <p>
-                                                Отлично понимает клиентов, находит общий язык, быстро решает катастрофы
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="specialists__slider-card-info-instagram">
-                                        <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
-                                            <use xlink:href="#instagram"></use>
-                                        </svg>
-                                        petr_petrovich
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="specialists__slider-card-inner">
-                                <div class="specialists__slider-card-image-container">
-                                    <img src="img/specialists/2.jpg" alt="" class="specialists__slider-card-image">
-                                </div>
-                                <h4 class="specialists__slider-card-title">
-                                    Бэлла Виталевна
-                                </h4>
-                                <div class="specialists__slider-card-role">
-                                    SMM специалист
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="specialists__slider-card">
-                            <div class="specialists__slider-card-backplate">
-                                <div class="specialists__slider-card-info">
-                                    <div class="specialists__slider-card-info-skills">
-                                        <h4 class="specialists__slider-card-info-skills-heading">
-                                            Навыки
-                                        </h4>
-                                        <div class="specialists__slider-card-info-skills-text">
-                                            <p>
-                                                Отлично понимает клиентов, находит общий язык, быстро решает катастрофы
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="specialists__slider-card-info-instagram">
-                                        <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
-                                            <use xlink:href="#instagram"></use>
-                                        </svg>
-                                        petr_petrovich
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="specialists__slider-card-inner">
-                                <div class="specialists__slider-card-image-container">
-                                    <img src="img/specialists/3.jpg" alt="" class="specialists__slider-card-image">
-                                </div>
-                                <h4 class="specialists__slider-card-title">
-                                    Анастасия Якушева
-                                </h4>
-                                <div class="specialists__slider-card-role">
-                                    SMM специалист
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="specialists__slider-card">
-                            <div class="specialists__slider-card-backplate">
-                                <div class="specialists__slider-card-info">
-                                    <div class="specialists__slider-card-info-skills">
-                                        <h4 class="specialists__slider-card-info-skills-heading">
-                                            Навыки
-                                        </h4>
-                                        <div class="specialists__slider-card-info-skills-text">
-                                            <p>
-                                                Отлично понимает клиентов, находит общий язык, быстро решает катастрофы
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="specialists__slider-card-info-instagram">
-                                        <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
-                                            <use xlink:href="#instagram"></use>
-                                        </svg>
-                                        petr_petrovich
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="specialists__slider-card-inner">
-                                <div class="specialists__slider-card-image-container">
-                                    <img src="img/specialists/4.jpg" alt="" class="specialists__slider-card-image">
-                                </div>
-                                <h4 class="specialists__slider-card-title">
-                                    Константин Константинович
-                                </h4>
-                                <div class="specialists__slider-card-role">
-                                    Разработчик
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 
         </main>
