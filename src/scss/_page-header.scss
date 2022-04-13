@@ -33,7 +33,7 @@
 .page-header__logo-image {
     display: block;
     height: auto;
-    width: 21.5rem;
+    width: 16rem;
 
     @include breakpoint(mobile) {
         width: 13rem;
@@ -78,12 +78,11 @@
     align-items: center;
     margin-left: 17rem;
     position: relative;
-  bottom: .3rem;
+    bottom: 0.3rem;
     @include breakpoint(mobile) {
-        bottom: .2rem;
+        bottom: 0.2rem;
         z-index: 60;
         margin-left: auto;
-        
     }
 }
 
@@ -170,14 +169,13 @@
         .mobile-menu-open & {
             & > span {
                 &:nth-child(1) {
-                    transform: translateY(.7rem) rotate(45deg);
-                    
+                    transform: translateY(0.7rem) rotate(45deg);
                 }
                 &:nth-child(2) {
                     opacity: 0;
                 }
                 &:nth-child(3) {
-                    transform: translateY(-.7rem) rotate(-45deg);
+                    transform: translateY(-0.7rem) rotate(-45deg);
                 }
             }
         }
@@ -206,12 +204,12 @@
         padding-bottom: 4rem;
         opacity: 0;
         visibility: hidden;
-        transition: opacity .4s, visibility 0s linear .4s;
+        transition: opacity 0.4s, visibility 0s linear 0.4s;
 
         .mobile-menu-open & {
             opacity: 1;
             visibility: inherit;
-            transition: opacity .4s, visibility .4s;
+            transition: opacity 0.4s, visibility 0.4s;
         }
     }
 }
@@ -236,6 +234,11 @@
     line-height: 3.8rem;
     letter-spacing: -0.01em;
     text-transform: lowercase;
+    transition: color .2s, opacity .2s;
+
+    &.active {
+        opacity: 0.5;
+    }
 }
 
 .page-header__menu-contacts-list {
