@@ -67,6 +67,7 @@
     position: relative;
     backface-visibility: hidden;
     transform: translateZ(0);
+    color: var(--text-color);
     &--callback {
         padding-top: 3rem;
         padding-left: 5rem;

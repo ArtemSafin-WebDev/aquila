@@ -23,6 +23,7 @@ import fancybox from './fancybox';
 import quiz from './quiz';
 import cookies from './cookies';
 import menu from './menu';
+import accordions from './accordions';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     quiz();
     cookies();
     menu();
+    accordions();
 });
 
 window.addEventListener('load', function() {

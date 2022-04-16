@@ -47,6 +47,11 @@ body {
     flex-direction: column;
     font-family: var(--euclid);
     color: var(--text-color);
+
+    &.dark-page {
+        background-color: #040418;
+        color: white;
+    }
 }
 
 main {

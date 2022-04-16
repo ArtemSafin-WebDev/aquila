@@ -6,6 +6,10 @@
     height: auto;
     z-index: 300;
     color: white;
+
+    .modal-open & {
+        padding-right: var(--sb-width, 0);
+    }
 }
 
 .page-header__row {
@@ -107,6 +111,10 @@
         margin-right: 0;
     }
 
+    .no-touch &:not(.active):hover {
+        color: rgba(white, 0.7);
+    }
+
     &.active {
         color: white;
     }
@@ -134,9 +142,13 @@
     line-height: 2.2rem;
     text-transform: lowercase;
 
-    .no-touch &:hover,
-    .touch &:active {
+    .no-touch &:not(.active):hover,
+    .touch &:not(.active):active {
         color: rgba(white, 0.5);
+    }
+
+    &.active {
+        color: #08A2F7;
     }
 }
 

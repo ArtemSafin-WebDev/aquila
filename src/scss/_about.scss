@@ -99,8 +99,7 @@
     display: grid;
     position: relative;
 
-    .no-touch &:hover,
-    .touch &:active {
+    &.active {
         color: var(--primary-color);
         .about__achievements-card-icon {
             opacity: 0;
