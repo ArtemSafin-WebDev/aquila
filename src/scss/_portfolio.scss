@@ -15,9 +15,7 @@
 .portfolio__table-row {
     border-bottom: 1px solid #cfd5e7;
 
-    &:last-child {
-        border-bottom-color: transparent;
-    }
+   
 
     @include breakpointMF(small-tablet) {
         display: grid;
@@ -56,11 +54,20 @@
 .portfolio__table-head .portfolio__table-row {
     padding-top: 2rem;
     padding-bottom: 1.5rem;
+    
 
     @include breakpoint(mobile) {
         display: none;
     }
 }
+
+.portfolio__table-body .portfolio__table-row {
+    &:last-child {
+        border-bottom-color: transparent;
+    }
+}
+
+
 
 .portfolio__table-row-bg {
     position: absolute;
