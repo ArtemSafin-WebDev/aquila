@@ -1,0 +1,38 @@
+<svg width="1680" height="419" viewBox="0 0 1680 419" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <rect width="1680" height="419" fill="#073CBD" />
+    <rect width="1680" height="419" fill="url(#paint0_radial_1126_2)" />
+    <g clip-path="url(#clip0_1126_2)">
+        <g filter="url(#filter0_f_1126_2)">
+            <path
+                d="M1223.16 215.566C1358.97 244.876 1464.46 199.159 1571.99 286.455C1820.91 488.551 1477.87 1050.29 1151.04 1082.59C954.392 1102.03 832.068 1009.58 715.762 852.442C602.29 699.132 522.912 616.43 522.003 414.656C521.673 341.294 536.97 223.948 596.596 157.108C664.6 80.8772 735.788 21.2796 826.217 46.0928C919.312 71.6373 1054.62 179.19 1223.16 215.566Z"
+                fill="#2564FF" />
+        </g>
+        <g opacity="0.5" filter="url(#filter1_f_1126_2)">
+            <path
+                d="M1169.94 508.679C1253.75 526.762 1343.57 436.325 1409.92 490.203C1563.54 614.934 1351.78 961.706 1150.07 981.666C1028.7 993.676 953.209 936.622 881.439 839.632C811.417 745.005 795.865 686.437 795.319 561.888C795.12 516.603 808.063 438.665 844.868 397.402C886.844 350.342 922.104 344.002 977.913 359.312C1035.37 375.073 1065.92 486.236 1169.94 508.679Z"
+                fill="#08F7F7" />
+        </g>
+    </g>
+    <defs>
+        <filter id="filter0_f_1126_2" x="271.998" y="-209.615" width="1635.33" height="1544.77"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur_1126_2" />
+        </filter>
+        <filter id="filter1_f_1126_2" x="611.316" y="167.883" width="1035.26" height="999.369"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="92" result="effect1_foregroundBlur_1126_2" />
+        </filter>
+        <radialGradient id="paint0_radial_1126_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(599.5 149.239) rotate(12.6367) scale(1056.08 511.528)">
+            <stop stop-color="#040418" stop-opacity="0" />
+            <stop offset="1" stop-color="#040418" stop-opacity="0.06" />
+        </radialGradient>
+        <clipPath id="clip0_1126_2">
+            <rect width="1686" height="520" fill="white" transform="translate(190 -101)" />
+        </clipPath>
+    </defs>
+</svg>
