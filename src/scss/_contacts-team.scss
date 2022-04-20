@@ -5,7 +5,7 @@
 
     padding-bottom: 11rem;
     @include breakpoint(mobile) {
-        padding: 2rem 0;
+        padding: 2.5rem 0;
     }
 }
 
@@ -32,12 +32,13 @@
 
 .contacts-team__list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-gap: 6rem;
 
     @include breakpoint(mobile) {
-        grid-template-columns: minmax(0, 1fr);
-        grid-gap: 2rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 1.5rem;
+        grid-row-gap: 2rem;
     }
 }
 
@@ -48,6 +49,10 @@
     backface-visibility: hidden;
     transform: translateZ(0);
     margin-bottom: 2rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 1rem;
+    }
     &::before {
         content: '';
         display: block;
@@ -70,6 +75,12 @@
     font-size: 2.8rem;
     line-height: 4rem;
     margin-bottom: 1.2rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 0.7rem;
+    }
 }
 
 .contacts-team__card-text {
@@ -78,4 +89,9 @@
     font-size: 1.8rem;
     line-height: 2.3rem;
     color: #cfd5e7;
+
+    @include breakpoint(mobile) {
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
 }

@@ -1,0 +1,93 @@
+.contacts-links {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    @include breakpoint(mobile) {
+        padding: .8rem 0;
+    }
+}
+
+.contacts-links__content {
+    padding-left: var(--sidebar-width);
+
+    @include breakpoint(mobile) {
+        padding: 0;
+    }
+}
+
+.contacts-links__list-item {
+    border-bottom: 1px solid rgba(#000000, 0.1);
+    &:last-child {
+        border-color: transparent;
+    }
+}
+
+.contacts-links__card {
+    display: flex;
+    align-items: flex-start;
+    padding: 2.2rem 0;
+    justify-content: space-between;
+
+    @include breakpoint(mobile) {
+        padding: 1.8rem 0;
+    }
+    
+
+    svg {
+        flex-shrink: 0;
+        width: 3.8rem;
+        height: 3.8rem;
+        transition: fill 0.2s;
+        fill: #cfd5e7;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        @include breakpoint(mobile) {
+            width: 2.2rem;
+            height: 2.2rem;
+            margin-top: .37rem;
+            
+        }
+    }
+
+    .no-touch &:hover {
+        color: #073CBD;
+        .contacts-links__card-text {
+            color: #073CBD;
+        }
+        svg {
+            fill: #073cbd;
+        }
+    }
+}
+
+.contacts-links__card-content {
+    width: 66rem;
+}
+
+.contacts-links__card-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 5.7rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.2rem;
+
+    @include breakpoint(mobile) {
+        font-size: 2.4rem;
+        line-height: 1.2;
+    }
+}
+
+.contacts-links__card-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    transition: color .2s;
+    color: #cfd5e7;
+
+    @include breakpoint(mobile) {
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
+}
