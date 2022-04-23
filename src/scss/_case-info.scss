@@ -1,0 +1,56 @@
+.case-info {
+    padding-top: 3.4rem;
+    padding-bottom: 6.5rem;
+
+    @include breakpoint(mobile) {
+        padding: 3rem 0;
+    }
+}
+
+.case-info__content {
+    padding-left: var(--sidebar-width);
+
+    @include breakpoint(mobile) {
+        padding: 0;
+    }
+}
+
+.case-info__list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 5rem;
+
+    @include breakpoint(mobile) {
+        grid-template-columns: minmax(0, 1fr);
+        grid-gap: 2rem;
+    }
+}
+
+.case-info__card-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-transform: lowercase;
+    color: #a7b8ce;
+    margin-bottom: 1rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.case-info__card-desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.01em;
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+}

@@ -59,6 +59,26 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    let caseContact = document.querySelector('#case-contact-form');
+
+    if (caseContact) {
+        caseContact.addEventListener('submit', function(event) {
+            event.preventDefault();
+            if (
+                $(caseContact)
+                    .parsley()
+                    .isValid()
+            ) {
+                caseContact.reset();
+                $(caseContact)
+                    .parsley()
+                    .reset();
+                if (typeof window.openModal === 'function') {
+                    window.openModal('#zoom-modal-success');
+                }
+            }
+        });
+    }
     let zoomForm = document.querySelector('#zoom-form');
 
     if (zoomForm) {
