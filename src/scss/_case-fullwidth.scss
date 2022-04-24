@@ -1,0 +1,12 @@
+.case-fullwidth {
+    margin-bottom: 10rem;
+    @include breakpoint(mobile) {
+        margin-bottom: 5rem;
+    }
+}
+
+.case-fullwidth__image {
+    display: block;
+    width: 100%;
+    height: auto;
+}

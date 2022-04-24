@@ -7,6 +7,10 @@
     z-index: 300;
     color: white;
 
+    &--dark {
+        color: var(--text-color);
+    }
+
     .modal-open & {
         padding-right: var(--sb-width, 0);
     }
@@ -34,10 +38,20 @@
     }
 }
 
+.page-header--dark .page-header__logo-image {
+    filter: invert(100%);
+  
+}
+
 .page-header__logo-image {
     display: block;
     height: auto;
     width: 16rem;
+    transition: filter .2s;
+
+    .mobile-menu-open & {
+        filter: invert(0);
+    }
 
     @include breakpoint(mobile) {
         width: 13rem;
@@ -67,6 +81,14 @@
         transform-origin: right center;
         transform: scaleX(0);
     }
+
+    .page-header--dark & {
+        &::before {
+            background-color: var(--text-color);
+        }
+    }
+
+
 
     .no-touch &:hover {
         &::before {
@@ -107,6 +129,7 @@
     &:visited {
         color: rgba(white, 0.5);
     }
+
     &:last-child {
         margin-right: 0;
     }
@@ -117,6 +140,23 @@
 
     &.active {
         color: white;
+    }
+
+    body:not(.mobile-menu-open) .page-header--dark & {
+        color: rgba(#040418, 0.5);
+        &:link,
+        &:visited {
+            color: rgba(#040418, 0.5);
+        }
+
+        &.active {
+            color: #040418;
+        }
+    }
+
+    .no-touch .page-header--dark &:hover,
+    .touch .page-header--dark &:active {
+        color: #040418;
     }
 }
 
@@ -147,8 +187,13 @@
         color: rgba(white, 0.5);
     }
 
+    .no-touch .page-header--dark &:not(.active):hover,
+    .touch .page-header--dark &:not(.active):active {
+        color: rgba(#040418, 0.5);
+    }
+
     &.active {
-        color: #08A2F7;
+        color: #08a2f7;
     }
 }
 
@@ -178,8 +223,13 @@
             }
         }
 
+        .page-header--dark & > span {
+            background-color: var(--text-color);
+        }
+
         .mobile-menu-open & {
             & > span {
+                background-color: #fff;
                 &:nth-child(1) {
                     transform: translateY(0.7rem) rotate(45deg);
                 }
@@ -246,7 +296,7 @@
     line-height: 3.8rem;
     letter-spacing: -0.01em;
     text-transform: lowercase;
-    transition: color .2s, opacity .2s;
+    transition: color 0.2s, opacity 0.2s;
 
     &.active {
         opacity: 0.5;
@@ -281,3 +331,5 @@
         color: #cfd5e7;
     }
 }
+
+

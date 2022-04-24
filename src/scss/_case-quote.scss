@@ -1,0 +1,84 @@
+.case-quote {
+    margin-bottom: 10rem;
+    padding: 10rem 0;
+    background: linear-gradient(309.27deg, rgba(7, 60, 189, 0.1334) 23.71%, rgba(7, 60, 189, 0) 95.58%), #040418;
+    color: white;
+    @include breakpoint(mobile) {
+        margin-bottom: 5rem;
+        padding: 4rem 0;
+    }
+}
+
+.case-quote__content {
+    padding-left: var(--sidebar-width);
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-gap: 5rem;
+
+    @include breakpoint(mobile) {
+        padding: 0;
+        grid-template-columns: minmax(0, 1fr);
+        grid-gap: 2rem;
+    }
+}
+
+.case-quote__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+    text-indent: 23rem;
+    position: relative;
+
+    @include breakpointMF(small-tablet) {
+        grid-column: 1 / 6;
+    }
+
+    @include breakpoint(mobile) {
+        text-indent: 3rem;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    &::before {
+        content: '';
+        width: 2.7rem;
+        height: 2.2rem;
+        position: absolute;
+        left: 0;
+        top: 1.4rem;
+        background-image: url('../img/quotes.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include breakpoint(mobile) {
+            width: 2rem;
+            height: 1.6rem;
+            top: .4rem;
+        }
+    }
+}
+
+.case-quote__author {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    @include breakpointMF(small-tablet) {
+        grid-column: 4 / -1;
+    }
+
+    @include breakpoint(mobile) {
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
+}
+
+
+.case-quote__author-name {
+    margin-bottom: 0.5rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

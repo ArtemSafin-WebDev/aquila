@@ -3,6 +3,10 @@
     z-index: 1;
     color: white;
     overflow: hidden;
+
+    &--dark {
+        color: var(--text-color);
+    }
 }
 
 .case-header__bg {
@@ -41,6 +45,15 @@
     min-height: 58rem;
     align-items: flex-start;
 
+    .case-header--simple & {
+        min-height: auto;
+        padding-bottom: 15rem;
+
+        @include breakpoint(mobile) {
+            padding-bottom: 4rem;
+        }
+    }
+
     @include breakpoint(mobile) {
         min-height: auto;
         padding-top: 7rem;
@@ -57,7 +70,7 @@
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.8rem;
-    transition: opacity .2s;
+    transition: opacity 0.2s;
     svg {
         flex-shrink: 0;
         fill: currentColor;
@@ -86,10 +99,12 @@
 }
 
 .case-header__text-content {
-    
-
     @include breakpointMF(small-tablet) {
         grid-column: 1 / 4;
+
+        .case-header--simple & {
+            grid-column: 1 / 5;
+        }
     }
 }
 
@@ -101,6 +116,10 @@
     letter-spacing: -0.01em;
     margin-bottom: 5rem;
     margin-top: -0.5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 
     @include breakpoint(mobile) {
         font-size: 2.8rem;
@@ -127,11 +146,10 @@
 }
 
 .case-header__achievements-list {
-
     @include breakpointMF(small-tablet) {
         grid-column: 5 / -1;
     }
-    
+
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     grid-gap: 4rem;

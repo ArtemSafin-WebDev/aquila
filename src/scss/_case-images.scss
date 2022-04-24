@@ -1,0 +1,38 @@
+.case-images {
+    margin-bottom: 10rem;
+    @include breakpoint(mobile) {
+        margin-bottom: 4rem;
+    }
+}
+
+.case-images__content {
+    padding-left: var(--sidebar-width);
+    display: grid;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    @include breakpoint(mobile) {
+        padding: 0;
+
+        grid-template-columns: minmax(0, 1fr);
+        column-count: 1;
+        grid-gap: 2rem;
+    }
+}
+
+.case-images__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    break-inside: avoid;
+    border-radius: 0.5rem;
+
+    @include breakpointMF(small-tablet) {
+        &:nth-child(2) {
+            margin-top: 9rem;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        margin: 0;
+    }
+}
