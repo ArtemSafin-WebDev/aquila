@@ -28,7 +28,6 @@
         grid-template-columns: minmax(0, 1fr);
         grid-gap: 0;
         margin-bottom: 3rem;
-        
     }
 }
 
@@ -62,26 +61,35 @@
 }
 
 .services__link {
-    display: inline-flex;
-    align-items: center;
+    display: inline-block;
     font-style: normal;
     font-weight: 500;
     font-size: 2.8rem;
     line-height: 3.6rem;
+    color: white;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+
+    &:link,
+    &:visited {
+        color: white;
+    }
     background: linear-gradient(271.78deg, #073cbd -56.16%, #08a2f7 22.14%, #63faff 95.46%);
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
     gap: 1.9rem;
 
-
-
     svg {
         width: 3rem;
         height: 3rem;
         flex-shrink: 0;
         margin-top: 0.3rem;
+        vertical-align: middle;
+        margin-bottom: .3rem;
+        margin-left: 1.5rem;
     }
 
     @include breakpoint(mobile) {
@@ -93,6 +101,7 @@
         svg {
             width: 2.8rem;
             height: 2.8rem;
+            margin-left: 1rem;
         }
     }
 }
@@ -119,7 +128,7 @@
         inset: 0;
         border-radius: 1.5rem;
         padding: 1px;
-        background: linear-gradient(271.83deg, #073CBD 12.25%, #08A2F7 55.22%, #63FAFF 95.45%);
+        background: linear-gradient(271.83deg, #073cbd 12.25%, #08a2f7 55.22%, #63faff 95.45%);
         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
         -webkit-mask-composite: xor;
         mask-composite: exclude;
@@ -128,7 +137,7 @@
 
     @include breakpoint(mobile) {
         padding: 1.5rem;
-        margin-bottom:2rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -404,7 +413,6 @@
         display: none;
     }
 }
-
 
 .services__arrow {
     margin-top: 12rem;

@@ -4,7 +4,7 @@
     margin-bottom: 12rem;
 
     @include breakpoint(mobile) {
-        margin-bottom: 3.5rem;
+        margin-bottom: 0;
     }
 }
 
@@ -119,6 +119,14 @@
         width: 100%;
         height: 100%;
         fill: currentColor;
+        transition: transform .3s;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        svg {
+            transform: scale(0.96);
+        }
     }
 }
 
@@ -179,6 +187,13 @@
     border-radius: 0.5rem;
     max-width: 46rem;
 
+    .no-touch &:hover,
+    .touch &:active {
+        .contact-us__calculate-heading {
+            text-decoration-color: var(--primary-color);
+        }
+    }
+
     @include breakpoint(mobile) {
         max-width: none;
         padding: 1.8rem;
@@ -220,6 +235,9 @@
     font-size: 2.6rem;
     line-height: 3.3rem;
     margin-top: auto;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.2s;
 
     @include breakpoint(mobile) {
         font-size: 1.8rem;
@@ -230,6 +248,11 @@
 .contact-us__channel-link {
     display: flex;
     align-items: center;
+
+    .no-touch &:hover,
+    .touch &:active {
+      
+    }
 }
 
 .contact-us__channel-link-icon {
@@ -257,6 +280,7 @@
     letter-spacing: -0.01em;
     margin-bottom: 0.6rem;
     font-weight: 400;
+  
 
     @include breakpoint(mobile) {
         margin: 0;
@@ -282,7 +306,6 @@
 }
 
 .contact-us__success-message {
-   
     align-items: center;
     padding: 2.5rem 0;
     position: relative;
@@ -309,10 +332,7 @@
         background-color: var(--primary-color);
         border-radius: 0.5rem;
     }
-
-    
 }
-
 
 .contact-us__success-message.shown {
     display: flex;

@@ -196,6 +196,11 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    .no-touch &:hover,
+    .touch &:active {
+        color: var(--primary-color);
+    }
 }
 
 .fresh__social-link-icon {
@@ -205,6 +210,7 @@
     margin-bottom: 1rem;
     flex-shrink: 0;
     align-self: center;
+    transition: transform .3s;
 
     @include breakpoint(mobile) {
         width: 5rem;

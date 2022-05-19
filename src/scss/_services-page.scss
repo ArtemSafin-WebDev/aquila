@@ -47,6 +47,8 @@
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.3rem;
+    position: relative;
+    bottom: -1.5rem;
 }
 .services-page__main {
     width: 50%;
@@ -452,7 +454,7 @@
 }
 
 .services-page__arrow-wrapper {
-    height: 22rem;
+    height: 37rem;
 }
 .services-page__arrow {
     width: 5rem;
