@@ -12,6 +12,7 @@
     padding-left: var(--sidebar-width);
     padding-top: 9rem;
     padding-bottom: 17rem;
+    position: relative;
 
     @include breakpoint(mobile) {
         padding: 3.5rem 0;
@@ -429,4 +430,9 @@
     @include breakpoint(mobile) {
         display: contents;
     }
+}
+
+
+.services__section-number {
+    top: 9rem;
 }

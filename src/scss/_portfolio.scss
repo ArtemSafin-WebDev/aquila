@@ -129,7 +129,7 @@
                 fill: white;
             }
             .portfolio__project-website-link-text::before {
-                transform: scaleX(0);
+               
                 background-color: #cfd5e7;
             }
 
@@ -352,4 +352,35 @@
     @include breakpoint(mobile) {
         display: none;
     }
+}
+
+
+.portfolio__project-link-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   
+
+    @include breakpointMF(small-tablet) {
+        z-index: 10;
+    }
+}
+
+.portfolio__project-website {
+
+    @include breakpointMF(small-tablet) {
+        position: relative;
+        z-index: 20;
+        transition: none;
+        display: block;
+        .no-touch &:hover {
+            .portfolio__project-website-link-text::before {
+                transform: scaleX(0);
+                background-color: #cfd5e7;
+            }
+        }
+    }
+  
 }

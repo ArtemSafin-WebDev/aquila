@@ -8,6 +8,7 @@
 
 .about__main {
     padding-left: var(--sidebar-width);
+    position: relative;
     @include breakpoint(mobile) {
         display: grid;
         grid-template-columns: minmax(0, 1fr);

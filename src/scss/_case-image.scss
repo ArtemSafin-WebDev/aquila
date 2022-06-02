@@ -8,6 +8,7 @@
 
 .case-image__content {
     padding-left: var(--sidebar-width);
+    position: relative;
     @include breakpoint(mobile) {
         padding: 0;
     }
@@ -17,5 +18,47 @@
     display: block;
     width: 100%;
     height: auto;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
+}
+
+.case-image__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 23.4rem;
+    height: 23.4rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    transition: transform 0.2s;
+    text-align: center;
+    background: #040418;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 19.6rem;
+    color: white;
+    transform: translateY(-50%);
+    display: flex;
+    z-index: 50;
+
+    @include breakpoint(mobile) {
+        right: 2rem;
+        width: 7rem;
+        height: 7rem;
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        transform: translateY(-50%) scale(0.95);
+    }
 }
